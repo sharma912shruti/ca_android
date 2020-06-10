@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    tools:context=".activity.CourseRoomSyllabusActivity">
+
+    <include
+        android:id="@+id/syllabusToolbar"
+        layout="@layout/toolbar_generic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/networkLayout"
+            layout="@layout/internet_connection_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/syllabusListSwipeToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--        <ScrollView-->
+            <!--            android:id="@+id/courseSyllabusListLayout"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:visibility="gone"-->
+            <!--            android:scrollbars="none"-->
+            <!--            android:layout_height="match_parent">-->
+
+            <LinearLayout
+                android:id="@+id/courseSyllabusListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/learnerActivitiesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/learner_activities"
+                    android:textColor="#b5121b"
+                    android:textSize="@dimen/_20sp"
+                    android:textStyle="normal" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/syllabusListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+            <!--        </ScrollView>-->
+
+            <LinearLayout
+                android:id="@+id/noSyllabusLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:text="@string/no_syllabus"
+                    android:textColor="@color/headerColor"
+                    android:textSize="@dimen/_16sp" />
+
+            </LinearLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

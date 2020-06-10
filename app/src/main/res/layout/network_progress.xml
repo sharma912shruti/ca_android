@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/small_margin"
+              android:background="#00000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        >
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/progressText"
+        android:indeterminate="false"
+        android:layout_margin="@dimen/small_margin"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressText"
+        android:text="Please wait while processing.."
+        android:gravity="center_vertical"
+        android:textColor="@color/blackColor"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

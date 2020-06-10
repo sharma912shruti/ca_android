@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/_53dp"
+    android:animateLayoutChanges="true"
+    android:orientation="horizontal"
+    android:padding="@dimen/_4dp"
+    android:background="@color/bgNoInternetColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:padding="@dimen/_5dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_8dp"
+        android:src="@drawable/ic_no_internet" />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:contentDescription="@string/not_internet_connection"
+        android:padding="@dimen/_5dp">
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:text="@string/not_internet_connection"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/_11sp"
+            android:textStyle="bold" />
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/discriptionNetworkTxt"
+            android:text="@string/connection_is_required"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/_11sp" />
+    </LinearLayout>
+
+    </LinearLayout>
+

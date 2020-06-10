@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parentLayout"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/toolbarBlock"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar_generic"
+            android:visibility="visible"
+            android:id="@+id/toolbarGeneric"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/networkLayout"
+        layout="@layout/internet_connection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/commonFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/facultyView"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/_16dp"
+                android:paddingRight="@dimen/_16dp"
+                android:paddingTop="@dimen/_20dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:layout_marginBottom="@dimen/_14dp"
+                    android:textAllCaps="true"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_13sp"
+                    android:text="@string/assignment_statuses"
+                    android:textColor="@color/keepMeDescriptionColor"
+                    android:background="@drawable/gray_filled_square_noborder"
+                    />
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/noAssignmentsStatusesTxt"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/text_grey_900"
+                    android:text="@string/no_assignment_statuses"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/facultyContainer"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/studentView"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/studentContainer"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/_16dp"
+                android:paddingRight="@dimen/_16dp"
+                android:paddingTop="@dimen/_20dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:layout_marginBottom="@dimen/_14dp"
+                    android:textAllCaps="true"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_13sp"
+                    android:text="@string/current_course_grade"
+                    android:textColor="@color/keepMeDescriptionColor"
+                    android:background="@drawable/gray_filled_square_noborder"
+                    />
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/noCurrentCourseGradeTxt"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/keepMeDescriptionColor"
+                    android:text="@string/no_current_course_msg"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/currentGradeBlockLayout"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/currentGradePercentTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_24sp"
+                        android:textColor="@color/keepMeDescriptionColor"
+                        android:text="90.00%"
+                        />
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/_11sp"
+                        android:textColor="@color/text_grey_500"
+                        android:text="@string/current_grade_info"
+                        />
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/_11sp"
+                        android:textColor="@color/text_grey_500"
+                        android:text="@string/grade_last_update_info"
+                        />
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/gradeUpdateDateTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/_11sp"
+                        android:textColor="@color/text_grey_500"
+                        android:text="@string/no_text"
+                        />
+
+                </LinearLayout>
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_25dp"
+                    android:textAllCaps="true"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_13sp"
+                    android:text="@string/grade_items_and_statuses"
+                    android:textColor="@color/keepMeDescriptionColor"
+                    android:background="@drawable/gray_filled_square_noborder"
+                    />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_marginTop="@dimen/_18dp"
+    android:id="@+id/noAssignmentGradeLayout"
+    android:orientation="vertical">
+                <edu.capella.mobile.android.widgets.CPTextView
+
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/text_grey_500"
+                    android:text="@string/assignment_grade_statuses"
+                    />
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/gradeAssignmentMsgTxt"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9dp"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:textSize="@dimen/_11sp"
+                    android:textColor="@color/text_grey_500"
+                    android:text="@string/grade_for_assignment_msg"
+                    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_marginRight="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_15dp"
+        android:background="@color/border_grey_100"
+        android:layout_height="@dimen/_1dp"/>
+</LinearLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5dp"
+            android:paddingTop="@dimen/_5dp"
+        android:visibility="gone"
+        android:id="@+id/assignmentGradesPopperLayout">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:layout_marginRight="@dimen/_5dp"
+                android:textSize="@dimen/_14sp"
+                android:textColor="@color/text_black_900"
+                android:text="@string/no_text"
+                />
+
+            <ImageView
+                android:id="@+id/cheviAssig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_gravity="top"
+                android:tint="@color/blue_600"
+                android:src="@drawable/ic_chevron_right"/>
+
+                <LinearLayout
+                    android:id="@+id/assignmentTopLine"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/cheviAssig"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <edu.capella.mobile.android.widgets.CPTextView
+
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                     android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/text_black_900"
+                    android:text="@string/assignment_grade_statuses"
+                    />
+
+                    <LinearLayout
+                        android:id="@+id/assignmentGradesNotificationLayout"
+                        android:layout_below="@+id/assignmentTopLine"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_5dp"
+                            android:src="@drawable/ic_blue_dot"
+                            android:visibility="visible" />
+
+                        <edu.capella.mobile.android.widgets.CPTextView
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/notification_new_or_updated_past_three_days"
+                            android:textStyle="italic"
+                            android:textColor="@color/text_grey_500"
+                            android:textSize="@dimen/_11sp" />
+
+
+                    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+            <View
+
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="@dimen/_15dp"
+                android:background="@color/border_grey_100"
+                android:layout_height="@dimen/_1dp"/>
+</RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/noOtherGradeLayout"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:orientation="vertical">
+                <edu.capella.mobile.android.widgets.CPTextView
+
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/text_grey_500"
+                    android:text="@string/other_grades"
+                    />
+
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/otherGradeAssignmentMsgTxt"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9dp"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:textSize="@dimen/_11sp"
+                    android:textColor="@color/text_grey_500"
+                    android:text="@string/grade_for_other_assignment_msg"
+                    />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/otherGradesPopperLayout"
+                    android:paddingTop="@dimen/_5dp"
+                    android:visibility="gone"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/cheviOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+                        android:tint="@color/blue_600"
+                        android:src="@drawable/ic_chevron_right"/>
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:layout_width="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_height="wrap_content"
+                        android:lines="3"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:textSize="@dimen/_14sp"
+                        android:text="@string/no_text"
+                        />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/otherTopLine"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_toLeftOf="@+id/cheviOther"
+                    android:orientation="vertical">
+
+
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:layout_width="wrap_content"
+                        android:visibility="visible"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:textSize="@dimen/_14sp"
+                        android:textColor="@color/text_black_900"
+                        android:text="@string/other_grades"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/otherGradesNotificationLayout"
+                        android:layout_below="@+id/otherTopLine"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_5dp"
+                            android:src="@drawable/ic_blue_dot"
+                            android:visibility="visible" />
+
+                        <edu.capella.mobile.android.widgets.CPTextView
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textStyle="italic"
+                            android:text="@string/notification_new_or_updated_past_three_days"
+                            android:textColor="@color/text_grey_500"
+                            android:textSize="@dimen/_11sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                    <View
+
+
+                        android:layout_width="match_parent"
+
+                        android:layout_marginTop="@dimen/_15dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/border_grey_100"
+                        android:layout_height="@dimen/_1dp"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

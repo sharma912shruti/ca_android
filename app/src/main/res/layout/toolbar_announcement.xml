@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/blog_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/headerColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/backButtonLl"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_chevron_left" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/backTxt"
+                android:layout_toRightOf="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:layout_centerVertical="true"
+                android:gravity="center|left"
+                android:text="@string/back"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/_14dp"
+                 />
+            </LinearLayout>
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/headerTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/_14dp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/headerLineView"
+            android:layout_below="@+id/blog_relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5dp"
+            android:background="@color/headerLineColor" />
+
+    </RelativeLayout>
+</LinearLayout>

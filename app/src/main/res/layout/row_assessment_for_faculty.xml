@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/_5dp"
+    android:paddingRight="@dimen/_5dp"
+    android:paddingBottom="@dimen/_5dp"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:paddingTop="@dimen/_2dp"
+        android:paddingBottom="@dimen/_2dp"
+        android:id="@+id/learner_name"
+        android:textStyle="normal"
+        android:textColor="@color/keepMeDescriptionColor"
+        android:textSize="@dimen/_14sp"/>
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:paddingTop="@dimen/_2dp"
+        android:paddingBottom="@dimen/_2dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:id="@+id/assessment_and_attempt_detail"
+        android:textColor="@color/text_grey_900"
+        android:textSize="@dimen/_14sp"/>
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/date_and_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:paddingTop="@dimen/_2dp"
+        android:paddingBottom="@dimen/_2dp"
+        android:text="njsdjjjsdjdjddj"
+        android:textColor="@color/text_grey_500"
+        android:textSize="@dimen/_11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/pastThreeDayLayout"
+        android:paddingTop="@dimen/_2dp"
+        android:contentDescription="@string/ada_new_updated_three_days"
+        android:layout_marginLeft="@dimen/_13dp"
+        android:paddingBottom="@dimen/_2dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_2dp"
+            android:contentDescription="@string/ada_new_updated_three_days"
+            android:layout_marginEnd="@dimen/_5dp"
+            android:src="@drawable/ic_blue_dot"/>
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ada_new_updated_three_days"
+            android:text="New or updated in past 3 days"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/update_message"
+            android:textStyle="italic"
+            android:textColor="@color/text_grey_500"
+            android:textSize="@dimen/_11sp"/>
+    </LinearLayout>
+
+</LinearLayout>

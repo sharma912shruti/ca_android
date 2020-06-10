@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+     android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:theme="@style/ProgressBarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBarWhite"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:theme="@style/ProgressBarWhiteTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/submitMessageTxt"
+        android:layout_below="@+id/progressBarWhite"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:textSize="@dimen/_14sp"
+        android:layout_height="wrap_content"
+        android:text="@string/submitting_thread"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/whiteColor"/>
+</RelativeLayout>

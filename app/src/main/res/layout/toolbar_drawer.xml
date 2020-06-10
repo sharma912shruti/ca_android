@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/headerColor"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/drawerImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ada_navigation_menu"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:padding="@dimen/_5dp"
+            android:src="@drawable/ic_dehaze" />
+
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteColor"
+            android:layout_centerInParent="true"
+            android:textStyle="normal"
+            android:text="--"
+            android:id="@+id/toolbarTitle"
+            android:textSize="@dimen/_14dp" />
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

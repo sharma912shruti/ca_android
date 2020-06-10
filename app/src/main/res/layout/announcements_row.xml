@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10dp"
+    android:layout_marginTop="@dimen/_5dp"
+    android:layout_marginEnd="@dimen/_10dp"
+    android:layout_marginBottom="@dimen/_5dp"
+    android:background="@drawable/white_filled_rect_gray"
+    android:orientation="vertical"
+    android:padding="@dimen/_6dp">
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/titleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/_2dp"
+        android:text="New Announcement that has the Blue Dot"
+        android:textColor="@color/text_black_900"
+        android:textSize="@dimen/_17sp" />
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/dateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/_2dp"
+
+        android:text="11/25/2019"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:textColor="@color/slider_menu_background"
+        android:textSize="@dimen/_11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_6dp"
+            android:layout_height="@dimen/_6dp"
+            android:layout_marginRight="@dimen/_5dp"
+            android:visibility="gone"
+            android:id="@+id/blue_dot_image"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_dot" />
+
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_2dp"
+            android:text="New or updated in past 3 days"
+            android:textColor="@color/timeOutTitleTextColor"
+            android:textSize="@dimen/_11sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+</LinearLayout>

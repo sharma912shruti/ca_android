@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/ada_navigate_through_the_app_using"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_25dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5dp"
+                android:src="@drawable/ic_tilt_arrow"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/openMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tap_to_open_menu"
+                android:textAlignment="center"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/_16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_10dp"
+                android:layout_height="@dimen/_1dp"
+                android:layout_marginEnd="@dimen/_5dp"
+                android:background="@color/grayLightColor" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textAlignment="center"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/_16sp" />
+
+            <View
+                android:layout_width="@dimen/_10dp"
+                android:layout_height="@dimen/_1dp"
+                android:layout_marginStart="@dimen/_5dp"
+                android:background="@color/grayLightColor" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/swipeRightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5dp"
+            android:text="@string/swipe_right_to_open_menu_from_everywhere"
+            android:textAlignment="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/_16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_10dp"
+            android:src="@drawable/ic_finger"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/ada_navigate_through_the_app_using"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/blue_filled_rounded_button_for_coach"
+            android:paddingStart="@dimen/_20dp"
+            android:paddingEnd="@dimen/_20dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+            android:id="@+id/coachOkButton"
+            android:text="@string/ok_got_it"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/_14sp" />
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

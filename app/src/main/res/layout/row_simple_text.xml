@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/simpleTextParentLayout"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="match_parent"
+        android:text="Unit"
+        android:id="@+id/title"
+        android:textSize="@dimen/_14sp"
+        android:paddingTop="@dimen/_5dp"
+
+        android:textColor="@color/text_black_900"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/notificationLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_5dp"
+            android:src="@drawable/ic_blue_dot"
+            android:visibility="visible" />
+
+        <edu.capella.mobile.android.widgets.CPTextView
+
+            android:layout_width="wrap_content"
+            android:id="@+id/dueTextTxt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/new_or_updated_in_past_3_days"
+            android:textStyle="italic"
+            android:textColor="@color/text_grey_500"
+            android:textSize="@dimen/_11sp" />
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/separatorLine"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_15dp"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/background_grey_600" />
+
+
+</LinearLayout>
+

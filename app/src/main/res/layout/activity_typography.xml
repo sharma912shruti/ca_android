@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_95dp"
+        android:background="@color/headerColor"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90dp"
+            android:paddingTop="@dimen/_14dp"
+            android:paddingBottom="@dimen/_14dp">
+
+            <ImageView
+                android:id="@+id/logoIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="@dimen/_30dp"
+                android:paddingRight="@dimen/_30dp"
+                android:src="@drawable/header_logo"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5dp"
+            android:background="@color/headerLineColor" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="@dimen/_18dp"
+        android:paddingTop="@dimen/_15dp"
+        android:paddingRight="@dimen/_14dp"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/childLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Detail page headers: 24dp, weight-medium, #B5121B"
+                android:textColor="#b5121b"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="normal" />
+
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+
+                android:text="Sub header: 20dp, #1A1712, weight - check design"
+                android:textColor="#1a1712"
+                android:textSize="@dimen/_16sp" />
+
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+
+                android:text="Body text: 17dp, weight-regular, #1A1712"
+                android:textColor="#1a1712"
+                android:textSize="@dimen/_14sp" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+                android:text="Small body text and CAPS: 14dp, weight-regular, #585858"
+                android:textColor="#585858"
+                android:textSize="@dimen/_11sp" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="(unless design says otherwise - #1A1712, #333333, weight-medium, italic)"
+                android:textColor="#585858"
+                android:textSize="@dimen/_11sp" />
+
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+                android:text="Help/hint text: 17dp, weight-regular, #666666"
+
+                android:textColor="#666666"
+                android:textSize="@dimen/_14sp"
+                  />
+
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+                android:text="Text links: 17dp, weight-medium, #0F6DA8"
+                android:textColor="#0f6da8"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="normal" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+                android:text="SMALL CAPS TEXT LINKS: 14dp, #0F6DA8, weight-regular"
+                android:textColor="#0f6da8"
+                android:textSize="@dimen/_12sp"
+                  />
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEXT BUTTONS: 14dp, weight-medium"
+                android:textStyle="normal"
+                android:textColor="#0f6da8"
+                android:textSize="@dimen/_11sp"
+                />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+                android:textColor="#1a1712"
+
+                android:textSize="@dimen/_14sp"
+                android:textStyle="bold"
+                android:text="Button text: 17dp, weight-bold, #FFFFFF" />
+
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+                android:textColor="#1a1712"
+                android:textSize="@dimen/_14sp"
+                android:text="Letter spacing: 0" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

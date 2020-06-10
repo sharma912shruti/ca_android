@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/course"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_courses"
+            android:layout_gravity="center_vertical"
+            android:icon="@drawable/ic_bookmark"
+            android:title="@string/menu_courses" />
+    </group>
+
+    <group
+        android:id="@+id/finance"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_finances"
+            android:icon="@drawable/ic_finances"
+            android:title="@string/menu_finances" />
+    </group>
+
+    <group
+        android:id="@+id/academic_plan"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_academic_plan"
+            android:icon="@drawable/ic_graduate"
+            android:title="@string/menu_academic_plan" />
+    </group>
+
+    <group
+        android:id="@+id/library"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_books"
+            android:title="@string/menu_library" />
+    </group>
+
+    <group
+        android:id="@+id/contact_us"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_contact_us"
+            android:title="@string/menu_contact_us" />
+    </group>
+
+    <group
+        android:id="@+id/campus_news"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_campus_news"
+            android:icon="@drawable/ic_news"
+            android:title="@string/menu_campus_news" />
+    </group>
+
+    <group
+        android:id="@+id/view_campus_on_full_site"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_view_campus_on_full_site"
+            android:icon="@drawable/ic_logo"
+            android:title="@string/menu_view_campus_on_full_site" />
+    </group>
+
+    <group
+        android:id="@+id/logout"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_logout" />
+    </group>
+
+</menu>

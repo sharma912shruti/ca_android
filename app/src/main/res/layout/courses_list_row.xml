@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/course_current_parent_layout"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_5dp"
+        android:orientation="horizontal">
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/courseIdentifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="TEST-FP6001"
+            android:textColor="@color/text_black_900"
+            android:textSize="@dimen/_15sp" />
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/courseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/courseIdentifier"
+            android:layout_marginTop="@dimen/_3dp"
+            android:text="FP2 Test Courseroom A"
+            android:textColor="@color/text_black_900"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="normal" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_chevron_right" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3dp"
+        android:paddingLeft="@dimen/_5dp"
+        android:orientation="horizontal">
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/courseTagLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            android:textColor="@color/timeOutTitleTextColor"
+            android:textSize="@dimen/_12sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3dp"
+        android:paddingLeft="@dimen/_5dp"
+        android:id="@+id/instructor_layout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/instructorLogoImg"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:padding="@dimen/_2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/instructorNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jayesh Lahare"
+                android:textColor="@color/text_black_900"
+                android:textSize="@dimen/_14sp" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instructor"
+                android:textColor="@color/timeOutTitleTextColor"
+                android:textSize="@dimen/_11sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_5dp"
+        android:background="@color/background_grey_600" />
+
+
+</LinearLayout>

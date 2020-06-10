@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_grey_600"
+    android:orientation="vertical">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:fillViewport="true"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/background_grey_600"-->
+<!--            android:orientation="vertical">-->
+
+    <include
+        android:id="@+id/networkLayout"
+        layout="@layout/internet_connection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/alertLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/networkLayout"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:orientation="vertical"/>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/campusSwipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5dp"
+
+
+        android:layout_below="@+id/alertLayout"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/campusListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:orientation="vertical" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/noInfoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/there_are_no_recent"
+        android:textColor="@color/text_grey_900"
+        android:textSize="@dimen/_16sp"
+        android:visibility="gone" />
+<!--        </RelativeLayout>-->
+
+<!--    </ScrollView>-->
+
+
+</RelativeLayout>

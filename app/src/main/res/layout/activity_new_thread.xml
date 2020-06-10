@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    android:id="@+id/createPostParent"
+    tools:context=".activity.CreatePostActivity">
+
+    <include
+        android:id="@+id/newThreadToolbar"
+        layout="@layout/toolbar_generic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/networkLayout"
+        layout="@layout/internet_connection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <include
+        android:id="@+id/failsLayout"
+        layout="@layout/post_failure_layout"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/ada_view_description"
+        android:background="@color/background_grey_100"
+        android:orientation="vertical">
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3dp"
+            android:id="@+id/postNameTxt"
+            android:text="@string/no_text"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/headerColor"
+            android:textSize="@dimen/_14sp" />
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewDescriptionTxt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3dp"
+            android:text="@string/view_description"
+            android:contentDescription="@string/ada_view_description"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/text_link_selector"
+            android:textSize="@dimen/_11sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:background="@color/borderLineColor"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:background="@color/whiteColor"
+        android:orientation="vertical"
+        android:padding="@dimen/_5dp">
+
+        <edu.capella.mobile.android.widgets.CPEditText
+            android:layout_width="match_parent"
+            android:id="@+id/threadSubjectEditTxt"
+            android:layout_height="@dimen/_42dp"
+            android:inputType="text"
+            android:scrollHorizontally="true"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:minLines="1"
+            android:maxLength="300"
+            android:background="@color/transParentColor"
+            android:text=""
+            android:hint="@string/subject"
+            android:textColorHint="@color/text_grey_300"
+            android:textColor="@color/blackColor"
+            android:textSize="@dimen/_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/border_grey_100"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/responseNameTxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:textStyle="normal|italic"
+                android:textColor="@color/capella_red"
+                android:text="Response to Jayesh"
+                android:textSize="@dimen/_11sp"
+                />
+
+            <edu.capella.mobile.android.widgets.CPEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/threadBodyEditTxt"
+                android:gravity="top|left"
+                android:textColorHint="@color/text_grey_300"
+                android:imeOptions="actionDone"
+
+                android:background="@color/transParentColor"
+                android:text=""
+                android:inputType="textMultiLine"
+                android:focusable="true"
+                android:lines="10"
+                android:minLines="10"
+                android:maxLines="10"
+                android:hint="@string/write_your_post"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/_14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_below="@+id/headerLayout"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/background_grey_600" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_35dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/saveAsDraftTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_weight="1.10"
+                android:background="@drawable/blue_rounded_button"
+                android:gravity="center"
+                android:padding="@dimen/_10dp"
+                android:text="@string/save_as_draft"
+                android:contentDescription="@string/ada_save_draft_button"
+                android:textAllCaps="true"
+                android:textColor="@color/checkBoxColor"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="bold" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/submitPostTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_weight="0.90"
+                android:background="@drawable/default_button_primary"
+                android:gravity="center"
+                android:padding="@dimen/_10dp"
+                android:contentDescription="@string/ada_submit_button"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--   ADA Content String     -->
+
+    <string name="ada_keep_me_signe_in">Keep me signed in checkbox</string>
+    <string name="ada_keep_me_signe_in_state_checked">checked</string>
+    <string name="ada_keep_me_signe_in_state_unchecked">unchecked</string>
+    <string name="ada_save_your_date">Save Your Dates Button</string>
+    <string name="ada_cancle_button_for_date_picker">Cancel Button</string>
+    <string name="ada_login_button">Login Button</string>
+    <string name="ada_forgot_username">Forgot Username,link</string>
+    <string name="ada_reset_password">Reset Password,link.</string>
+    <string name="ada_learn_capella">Learn about Capella University,link</string>
+
+    <string name="ada_keep_me_sign_in_setting">Keep Me Signed In</string>
+    <string name="ada_on">ON</string>
+    <string name="ada_off">OFF</string>
+    <string name="ada_prospective_student_info">Prospective Student Info,link</string>
+    <string name="ada_push_notification">Push Notifications</string>
+    <string name="ada_apply_for_admision">Apply for Admission,link</string>
+    <string name="ada_trial_course">Trial Course,link</string>
+    <string name="ada_warning_msg_app_update">Before you log in, you must update your app for important security improvements.
+    Get Update.link</string>
+
+    <string name="ada_cancel_button">Cancel Button</string>
+    <string name="ada_keep_editing_button">Keep Editing Button</string>
+    <string name="ada_confirm_button">Confirm Button</string>
+    <string name="ada_ok_button_for_date_picker">Done Button</string>
+    <string name="ada_academic_engagement_needed">Academic Engagement Needed,Text</string>
+    <string name="ada_academic_engagement_needed_please_complete">Academic Engagement Needed, Please complete an assessment or activity.</string>
+    <string name="ada_academic_verification_pending">Engagement Verification Pending, We have received your course progress update. There may be a short processing delay before it appears in the course</string>
+    <string name="ada_grades_status">Grades and Status,</string>
+    <string name="ada_sssessments_and_status">Assessments and Status,</string>
+    <string name="ada_announcemenet">Announcements,</string>
+    <string name="ada_current_courses_activity">Current Courses Active</string>
+    <string name="ada_previous_courses_activity">Previous Courses Active</string>
+    <string name="ada_edit_delete_file_attachment">Edit or delete this file attachment in the Courseroom. Link,  Link will open in a web browser.</string>
+    <string name="ada_academic_support_button">Academic Advising, Button, Link will open in a web browser.</string>
+    <string name="ada_academic_support_link">Academic Support</string>
+    <string name="ada_close_button_app_version">Close Button</string>
+    <string name="ada_close_button_update_version">Close</string>
+    <string name="ada_draft_collapsed_data">draft.collapsedText.data</string>
+    <string name="get_update_button">Get Update Button</string>
+    <string name="ada_finance_dashboard_close_button">Close Finance Dashboard </string>
+    <string name="ada_finance_academic_close_button">Close academic plan </string>
+    <string name="ada_finance_dashboard_share_button">Share Button</string>
+    <string name="ada_view_description">View Description,link</string>
+    <string name="ada_create_new_thread">Create a new thread,link</string>
+    <string name="ada_finance_dashboard_refresh_button">Refresh </string>
+    <string name="ada_finance_dashboard_forword_button">Forward </string>
+    <string name="ada_your_full_profile_on_campus">View and edit your full profile on Campus, Link, Link will open in a web browser.</string>
+    <string name="ada_navigate_through_the_app_using">You can navigate through the app using the main menu at the top left corner of the screen.</string>
+    <string name="ada_new_updated_three_days">New or updated in past 3 days</string>
+    <string name="ada_view_and_grade_assessment_courseromm">View and grade assessments in the courseroom, Link, Link will open in a web browser.</string>
+    <string name="ada_iguide_support_button">Capella Campus, Button, Link will open in a web browser.</string>
+    <string name="ada_iguide_support_link">Capella Campus</string>
+    <string name="ada_technical_support_button">Technical Support, Button, Link will open in a web browser.</string>
+    <string name="ada_technical_support">Technical Support</string>
+    <string name="discussion_yellowdig_message">You\'ll find your Yellowdig discussions in your weeks.</string>
+    <string name="go_to_course_room_menu_to_view_weeks">Go to course menu to view weeks.</string>
+    <string name="please_login">Please log in.</string>
+    <string name="action_available">action available</string>
+    <string name="gp_2_error_message">We are having a temporary system issue. Please log in to the courseroom to see your course.</string>
+    <string name="some_item_not_work_on_mobile">Some items might not work on your mobile device.</string>
+
+    <string name="ada_navigation_menu">Navigation menu.</string>
+
+    <string name="ada_edit_your_email_link">Edit your email address on campus, Link, Link will open in a web browser.</string>
+    <string name="ada_profile_picture">Profile picture image.</string>
+
+    <string name="ada_new_thread_btn">New thread </string>
+    <string name="ada_link_will_open_browser">, Link, Link will open in a web browser.</string>
+    <string name="ada_button_link_will_open_browser">, Button, Link will open in a web browser.</string>
+    <string name="ada_back_button">Back button</string>
+<!--    <string name="ada_back_button_back">Back button back</string>-->
+    <string name="ada_submit_button">Submit button</string>
+    <string name="ada_save_draft_button">Save as draft button </string>
+    <string name="ada_continue_button">Continue Button</string>
+    <string name="ada_ok_button">Ok Button</string>
+    <string name="ada_navigation_options">Navigation options</string>
+    <string name="ada_refresh_button">Refresh</string>
+    <string name="ada_forward_not_available">Forward button, not available.</string>
+    <string name="ada_share">Share</string>
+    <string name="ada_close_button">Close Button</string>
+    <string name="ada_view_faculty_feedback">View Faculty Feedback button</string>
+    <string name="ada_your_targets_dates_were_not_saved">Your target dates weren\'t saved.</string>
+    <string name="ada_draft_edit_were_are_saved">Your draft edits weren’t saved.</string>
+
+
+    <string name="ada_check_additional_feedback"> Check for additional feedback and attachments in the courseroom, Link, Link will open in a web browser.</string>
+    <string name="ada_view_additional_feedback">View all feedback in the courseroom, Link, Link will open in a web browser.</string>
+    <string name="ada_button">Button.</string>
+    <string name="ada_unread_items">unread items</string>
+    <string name="ada_close">close</string>
+    <string name="ada_please_try_again">Please try again.</string>
+
+    <string name="ada_no_internet_connection">No internet connection. A connection is required to log in.</string>
+    <string name="ada_internet_connection_available">Internet connection available.</string>
+   
+    <string name="ada_formated_view_close_button">Close Formatted View </string>
+    <string name="ada_scoring_guide_close_button">Close Scoring Guide</string>
+
+
+
+
+</resources>

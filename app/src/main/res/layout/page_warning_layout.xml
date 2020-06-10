@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:id="@+id/prntLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:background="@drawable/warning_background"
+        android:elevation="@dimen/_2dp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5dp"
+        android:paddingTop="@dimen/_5dp"
+        android:paddingRight="@dimen/_10dp"
+        android:paddingLeft="@dimen/_10dp"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_margin="@dimen/_5dp"
+            android:src="@drawable/ic_warning" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/_5dp"
+            android:orientation="vertical">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/alertTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_2dp"
+                android:maxLines="4"
+                android:padding="@dimen/_2dp"
+                android:text="@string/resource_might_not_open"
+                android:textColor="@color/timeOutTextColor"
+                android:textSize="@dimen/_11sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>

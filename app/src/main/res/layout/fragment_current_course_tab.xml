@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_15dp"
+    android:paddingRight="@dimen/_15dp"
+    android:paddingTop="@dimen/_15dp"
+    android:background="@color/whiteColor"
+    tools:context=".activity.tabs.ProfileTab">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--       <ScrollView-->
+<!--           android:id="@+id/currentCourseListLayout"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:scrollbars="none"-->
+<!--           android:layout_height="match_parent">-->
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/currentCourseRefreshView"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/currentCourseListView"
+                    android:layout_width="match_parent"
+                    android:overScrollMode="never"
+                    android:background="@color/whiteColor"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"/>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+<!--       </ScrollView>-->
+
+        <LinearLayout
+            android:id="@+id/currentNoCourseLayout"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:background="@color/whiteColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_active_course_title"
+                android:textColor="@color/headerColor"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="normal" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:text="@string/no_active_course_Detail"
+                android:textColor="@color/headerColor"
+                android:textSize="@dimen/_14sp"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

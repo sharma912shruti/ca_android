@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_generic" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/networkLayout"
+            layout="@layout/internet_connection_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:background="@color/whiteColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5dp"
+                    android:text="@string/key"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_grey_500"
+                    android:textSize="@dimen/_11dp" />
+
+                <View
+                    android:layout_width="@dimen/_1dp"
+                    android:layout_height="@dimen/_24dp"
+                    android:background="@color/background_grey_600" />
+            </LinearLayout>
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6dp"
+                android:drawableStart="@drawable/ic_file_blank"
+                android:drawablePadding="@dimen/_2dp"
+                android:maxLines="2"
+                android:text="@string/not_submitted"
+                android:textColor="@color/text_grey_500"
+                android:textSize="@dimen/_11dp" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14dp"
+                android:drawableStart="@drawable/ic_file_fill"
+                android:drawablePadding="@dimen/_2dp"
+                android:maxLines="2"
+                android:text="@string/submitted"
+                android:textColor="@color/text_grey_500"
+                android:textSize="@dimen/_11dp" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14dp"
+                android:drawableStart="@drawable/ic_file_fill"
+                android:drawablePadding="@dimen/_2dp"
+                android:drawableTint="@color/blue_600"
+                android:maxLines="2"
+                android:text="@string/evaluated"
+                android:textColor="@color/text_grey_500"
+                android:textSize="@dimen/_11dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/border_grey_100" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/assessmentPullToRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:background="@color/whiteColor"
+                android:visibility="visible">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/assessment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <LinearLayout
+                android:id="@+id/no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/whiteColor"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/no_detail_found"
+                    android:textColor="@color/headerColor"
+                    android:textSize="@dimen/_16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

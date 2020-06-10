@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_announcement" />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/networkParentLayout"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/networkLayout"
+            layout="@layout/internet_connection_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/facultySwipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/whiteColor"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="clip_horizontal"
+                android:id="@+id/no_data"
+                android:background="@color/whiteColor"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_height="wrap_content">
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/headerMessageTxt"
+                    android:layout_height="wrap_content"
+                    android:text="@string/assessment_message"
+                    android:textColor="@color/text_grey_900"
+                    android:textSize="@dimen/_14sp" />
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sp"
+                    android:contentDescription="@string/ada_view_and_grade_assessment_courseromm"
+                    android:id="@+id/view_grades_and_assessment"
+                    android:textColor="@drawable/text_link_selector"
+                    android:textStyle="normal"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:text="@string/view_and_grade_assessments_in_courseroom"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/addAssessment"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

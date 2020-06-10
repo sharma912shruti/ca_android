@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:id="@+id/prntLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/warning_background_draft"
+        android:elevation="@dimen/_2dp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5dp"
+        android:paddingTop="@dimen/_5dp"
+        android:paddingRight="@dimen/_10dp"
+        android:paddingLeft="@dimen/_10dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:padding="@dimen/_5dp"
+            android:src="@drawable/ic_warning_draft" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:orientation="vertical"
+            android:padding="@dimen/_5dp">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="match_parent"
+                android:id="@+id/failureMsg"
+                android:layout_height="wrap_content"
+                android:text="@string/Your_draft_edits"
+                android:textColor="@color/timeOutTextColor"
+                android:textSize="@dimen/_11sp"
+                android:textStyle="bold" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="match_parent"
+                android:id="@+id/pleaseTryAgainTxt"
+                android:layout_height="wrap_content"
+                android:text="@string/please_try_again"
+                android:textColor="@color/timeOutTitleTextColor"
+                android:textSize="@dimen/_11sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>

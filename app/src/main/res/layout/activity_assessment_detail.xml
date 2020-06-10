@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whiteColor"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_common" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/assessment_detail"
+            android:background="@color/whiteColor"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/networkLayout"
+                layout="@layout/internet_connection_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/assessmentRefresh"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:background="@color/whiteColor"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/studyTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5dp"
+                        android:layout_marginBottom="@dimen/_5dp"
+                        android:paddingTop="@dimen/_10dp"
+                        android:paddingBottom="@dimen/_10dp"
+                        android:paddingStart="@dimen/_15dp"
+                        android:paddingEnd="@dimen/_15dp"
+                        android:text="-"
+                        android:textAlignment="center"
+                        android:textColor="@color/headerLineColor"
+                        android:textSize="@dimen/_20sp"
+                        android:textStyle="normal" />
+
+<!--                    <include-->
+<!--                        android:id="@+id/warningLayout"-->
+<!--                        layout="@layout/page_warning_layout"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="@dimen/_10dp"-->
+<!--                        android:layout_marginEnd="@dimen/_10dp"-->
+<!--                        android:visibility="gone" />-->
+
+
+                    <LinearLayout
+                        android:id="@+id/warningLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/warning_background"
+                        android:elevation="@dimen/_2dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_5dp"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"
+                        android:paddingTop="@dimen/_5dp"
+                        android:paddingRight="@dimen/_10dp"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:visibility="gone">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_30dp"
+                            android:layout_height="@dimen/_30dp"
+                            android:layout_margin="@dimen/_5dp"
+                            android:src="@drawable/ic_warning" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="@dimen/_5dp"
+                            android:orientation="vertical">
+
+                            <edu.capella.mobile.android.widgets.CPTextView
+                                android:id="@+id/alertTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:ellipsize="end"
+                                android:lineSpacingExtra="@dimen/_2dp"
+                                android:padding="@dimen/_2dp"
+                                android:text="@string/resource_might_not_open"
+                                android:textColor="@color/text_grey_900"
+                                android:textSize="@dimen/_11sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <WebView
+                        android:id="@+id/studyWebView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_15dp"
+                        android:layout_marginTop="@dimen/_15dp"
+                        android:layout_marginEnd="@dimen/_15dp"
+                        android:background="@color/whiteColor" />
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/commonWebProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:theme="@style/ProgressBarTheme"
+        android:visibility="visible" />
+</RelativeLayout>

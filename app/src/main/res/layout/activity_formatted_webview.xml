@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parentLayout"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/toolbarBlock"
+
+        android:layout_height="@dimen/_46dp">
+
+
+        <include layout="@layout/toolbar_generic"
+            android:visibility="visible"
+            android:id="@+id/toolbarGeneric"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/commonWebViewParent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbarBlock"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/testBtn"
+    android:visibility="gone"
+android:text="test"></Button>
+
+
+                <WebView
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/formatedWebView">
+
+
+                </WebView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <ProgressBar
+            android:id="@+id/formattedWebProgressBar"
+            android:theme="@style/ProgressBarTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

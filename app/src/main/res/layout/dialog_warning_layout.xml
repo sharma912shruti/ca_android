@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_rounded_background"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_20dp"
+    android:paddingTop="@dimen/_20dp"
+    android:paddingRight="@dimen/_5dp"
+    >
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keep_editing"
+
+        android:textColor="@color/blackColor"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="normal" />
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/_2dp"
+
+        android:text="@string/Your_text_formatting"
+        android:textColor="@color/text_grey_500"
+        android:textSize="@dimen/_14sp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+       android:layout_marginBottom="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_height="wrap_content"
+        >
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/continueTV"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/cancelTV"
+            android:background="@drawable/background_dialog_textview"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:contentDescription="@string/ada_cancel_button"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_11sp"
+            android:textStyle="normal"
+            />
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keep_edit"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:id="@+id/cancelTV"
+            android:textAllCaps="true"
+            android:contentDescription="@string/ada_keep_editing_button"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_11sp"
+            android:padding="@dimen/_10dp"
+            android:textStyle="normal"
+            android:background="@drawable/background_dialog_textview"
+
+            android:textColor="@color/dark_blue_color"/>
+
+    </RelativeLayout>
+</LinearLayout>

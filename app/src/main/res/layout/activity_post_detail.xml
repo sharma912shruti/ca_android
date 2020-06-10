@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentPostDetailContainer"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/discussionPostToolbar"
+        layout="@layout/toolbar_generic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/networkLayout"
+        layout="@layout/internet_connection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/ada_view_description"
+        android:background="@color/background_grey_100"
+        android:orientation="vertical">
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3dp"
+            android:id="@+id/postNameTxt"
+            android:text="@string/no_text"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/headerColor"
+            android:textSize="@dimen/_14sp" />
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:id="@+id/viewDescriptionTxt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3dp"
+            android:text="@string/view_description"
+            android:contentDescription="@string/ada_view_description"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/text_link_selector"
+            android:textSize="@dimen/_11sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:background="@color/borderLineColor"
+            />
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/postDetailListSwipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/background_grey_300"
+        android:paddingTop="@dimen/_12dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/postMainContainer"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/_10dp"
+                android:paddingLeft="@dimen/_15dp"
+
+                android:id="@+id/mainPostDetailContainer"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/postTitle"
+                    android:textStyle="bold"
+                    android:text="Testing Attachment"
+                    android:textSize="@dimen/_16sp"
+                    android:textColor="@color/capella_red"/>
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:textAllCaps="true"
+                    android:id="@+id/view_formatted_post"
+                    android:text="@string/view_formatted_post"
+                    android:textSize="@dimen/_11sp"
+                    android:textColor="@drawable/text_link_selector"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:background="@color/borderLineColor"
+                    />
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/postDateTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="2/07/2020"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/text_grey_900"/>
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/postedNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="Rebecca Malkovich Elsberry"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/text_grey_900"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_2dp"
+                    android:visibility="gone"
+                    android:id="@+id/postedEmployeeRoleLayout"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_16dp"
+                        android:layout_height="@dimen/_16dp"
+                        android:tint="@color/orangeColor"
+                        android:layout_marginRight="@dimen/_4dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_stars"/>
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/postedEmployeeRoleTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Primary Instructor"
+                        android:textColor="@color/text_gray_900"
+                        android:textSize="@dimen/_11sp" />
+                </LinearLayout>
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/postBodyTextTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/text_grey_900"/>
+
+               <!-- <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/postAttachmentNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:text="Test document.docx"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/text_grey_900"/>-->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/attachmentLayout"
+
+    android:layout_marginTop="@dimen/_8dp"
+    android:padding="@dimen/_8dp"
+    android:background="@drawable/attachment_box">
+
+     <ImageView
+         android:layout_width="@dimen/_12dp"
+         android:layout_height="@dimen/_12dp"
+         android:layout_marginRight="@dimen/_5dp"
+         android:id="@+id/clip"
+         android:tint="@color/text_gray_900"
+         android:layout_centerVertical="true"
+         android:src="@drawable/ic_paperclip"/>
+
+        <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/postAttachmentSizeTxt"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11 KB"
+        android:textSize="@dimen/_11sp"
+        android:textColor="@color/text_grey_500"/>
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/postAttachmentLinkTxt"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/clip"
+        android:layout_toLeftOf="@+id/postAttachmentSizeTxt"
+        android:layout_height="wrap_content"
+        android:text="Test document.docx"
+        android:layout_marginRight="@dimen/_8dp"
+        android:textSize="@dimen/_11sp"
+        android:textColor="@color/dark_blue_color"/>
+
+</RelativeLayout>
+
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/replyPostBtnTxt"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45dp"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:paddingLeft="@dimen/_20dp"
+                    android:paddingRight="@dimen/_20dp"
+
+                    android:background="@drawable/default_button_primary"
+                    android:gravity="center"
+                    android:text="REPLY TO REBECCA"
+                    android:textAllCaps="true"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/_14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/repliesTitleHeadTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_16dp"
+                android:padding="@dimen/_8dp"
+                android:background="@color/whiteColor"
+                android:orientation="horizontal">
+
+
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="@string/replies"
+                    android:paddingLeft="@dimen/_7dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:background="@color/background_grey_600"
+                    android:textSize="@dimen/_14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_grey_900"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/replyListContainer">
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

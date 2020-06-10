@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/blog_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/headerColor"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5dp"
+                android:contentDescription="@string/ada_close_button_update_version"
+                android:background="@color/headerColor"
+                android:src="@drawable/ic_white_cross" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_30dp"
+        android:background="@color/whiteColor"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_30dp"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_30dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:layout_marginLeft="@dimen/_15dp"
+                    android:padding="@dimen/_2dp"
+                    android:src="@drawable/ic_warning_red" />
+
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_your_app"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:textColor="@color/technicalSupportColor"
+                    android:textSize="@dimen/_16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_14dp"
+                android:layout_marginRight="@dimen/_22dp"
+                android:gravity="center"
+
+                android:text="@string/you_must_updrade_your_app"
+                android:textColor="@color/technicalSupportColor"
+                android:textSize="@dimen/_14sp" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/updateTxt"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_40dp"
+                android:layout_marginBottom="@dimen/_30dp"
+                android:layout_height="@dimen/_50dp"
+                android:layout_marginRight="@dimen/_40dp"
+                android:layout_marginLeft="@dimen/_40dp"
+                android:background="@drawable/default_button_primary"
+                android:gravity="center"
+                android:contentDescription="@string/get_update_button"
+                android:text="@string/get_update"
+                android:textAllCaps="true"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

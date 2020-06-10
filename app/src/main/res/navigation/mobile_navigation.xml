@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_campus_news">
+
+    <fragment
+        android:id="@+id/nav_courses"
+        android:name="edu.capella.mobile.android.activity.ui.course.CourseFragment"
+        android:label="@string/menu_courses"
+        tools:layout="@layout/fragment_course" />
+
+    <fragment
+        android:id="@+id/nav_finances"
+        android:name="edu.capella.mobile.android.activity.ui.finance.FinanceFragment"
+        android:label="@string/menu_finances"
+        tools:layout="@layout/fragment_finance" />
+
+    <fragment
+        android:id="@+id/nav_academic_plan"
+        android:name="edu.capella.mobile.android.activity.ui.academic_plan.AcademicPlanFragment"
+        android:label="@string/menu_academic_plan"
+        tools:layout="@layout/fragment_academic_plan" />
+
+    <fragment
+        android:id="@+id/nav_library"
+        android:name="edu.capella.mobile.android.activity.ui.library.LibraryFragment"
+        android:label="@string/menu_library"
+        tools:layout="@layout/fragment_library" />
+
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="edu.capella.mobile.android.activity.ui.contact_us.ContactUsFragment"
+        android:label="@string/menu_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/nav_campus_news"
+        android:name="edu.capella.mobile.android.activity.ui.campus_news.CampusNewsFragment"
+        android:label="@string/menu_campus_news"
+        tools:layout="@layout/fragment_campus_news" />
+
+    <fragment
+        android:id="@+id/nav_view_campus_on_full_site"
+        android:name="edu.capella.mobile.android.activity.ui.campus_news.CampusFullSiteFragment"
+        android:label="@string/menu_view_campus_on_full_site"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="edu.capella.mobile.android.activity.ui.campus_news.CampusFullSiteFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_campus_news" />
+</navigation>

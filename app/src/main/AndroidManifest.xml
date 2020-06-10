@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.capella.mobile.android">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.CapellaApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <service
+            android:name=".app.ProtectorService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <activity android:name=".activity.GradeSubmissionHistoryActivity" />
+        <activity android:name=".activity.ClassmateDetailActivity" />
+        <activity android:name=".activity.ClassmatesActivity" />
+        <activity android:name=".activity.DiscussionForumActivity" />
+        <activity android:name=".activity.DiscussionTopicActivity" />
+        <activity android:name=".activity.DiscussionPostActivity" />
+        <activity android:name=".activity.GettingStartedDetailActivity" />
+        <activity android:name=".activity.CreatePostActivity"
+                    android:launchMode="singleTop"
+                    android:finishOnTaskLaunch="false"
+                    android:alwaysRetainTaskState="false"
+                    android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".activity.UnitWebViewActivity" />
+        <activity android:name=".activity.FormatedWebViewActivity" />
+        <activity android:name=".activity.GettingStartedActivity"/>
+        <activity android:name=".activity.GettingStartedOverViewActivity"/>
+        <activity android:name=".activity.AssignmentsActivity"/>
+        <activity android:name=".activity.GradesStatusActivity"/>
+        <activity android:name=".activity.GradeAssignmentsListActivity"/>
+        <activity android:name=".activity.GradeAssignmentsOtherListActivity"/>
+        <activity android:name=".activity.SettingActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.NoAccessMobileActivity"
+            android:launchMode="singleTop"
+            android:finishOnTaskLaunch="false"
+            android:alwaysRetainTaskState="false"/>
+
+
+        <activity
+            android:name=".activity.CoursesActivity"
+            android:label="@string/menu_courses"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="@string/profile"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MenuActivity"
+
+            android:launchMode="singleTop"
+            android:finishOnTaskLaunch="false"
+            android:alwaysRetainTaskState="false"
+            android:label="@string/title_activity_menu" />
+        <activity android:name=".activity.AlertDetailActivity" />
+        <activity android:name=".activity.DiscussionDraftActivity" />
+        <activity android:name=".activity.EditDraftActivity"
+            android:launchMode="singleTop"
+            android:finishOnTaskLaunch="false"
+            android:alwaysRetainTaskState="false"/>
+        <activity android:name=".activity.SplashActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LibraryActivity"
+            android:launchMode="singleTop" />
+
+
+
+        <activity
+            android:name=".activity.CommonWebViewActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.CampusDetailActivity" />
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.AnnouncementsActivity" />
+        <activity
+            android:name=".activity.UpdateVersionActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.AnnouncementsDetailActivity" />
+        <activity
+            android:name=".activity.CampusActivity"
+            android:launchMode="singleTop"
+            android:finishOnTaskLaunch="false"
+            android:alwaysRetainTaskState="false" /> <!-- <service -->
+        <activity android:name=".activity.LoginActivity" /> <!-- The below code is for android OS version below N -->
+        <activity android:name=".activity.CourseRoomMenuActivity" />
+        <activity android:name=".activity.CourseRoomSyllabusActivity" />
+        <activity android:name=".activity.StudyActivity" />
+        <activity android:name=".activity.CommonDetailActivity"/>
+        <activity android:name=".activity.TargetDateActivity"/>
+        <activity android:name=".activity.AssessmentForFacultyActivity"/>
+        <activity android:name=".activity.AssessmentForLearnerActivity"/>
+        <activity android:name=".activity.AssessmentAttemptDetailActivity"/>
+        <activity android:name=".activity.AttemptDetailActivity"/>
+        <activity android:name=".activity.AssessmentDetailListActivity"/>
+        <activity android:name=".activity.AssessmentDetailActivity"/>
+        <activity android:name=".activity.CourseToolActivity"/>
+        <activity android:name=".activity.GP2InAppBrowser"/>
+        <service
+            android:name=".fcm_service.CapellaAppFCMService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.urbanairship.autopilot"
+            android:value="edu.capella.mobile.android.fcm_service.SEIAutoPilot" />
+
+        <receiver
+            android:name=".utils.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

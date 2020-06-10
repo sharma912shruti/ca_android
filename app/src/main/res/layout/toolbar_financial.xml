@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_46dp"
+    android:background="@color/headerColor"
+    tools:ignore="MissingPrefix">
+
+
+
+        <LinearLayout
+            android:id="@+id/blog_relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5dp"
+                android:background="@color/headerColor"
+                android:src="@drawable/ic_close_black" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/headerTxt"
+                android:layout_toRightOf="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_weight="1"
+
+                android:textStyle="normal"
+                android:gravity="center"
+                android:text="Finances Dashboard"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/_14dp"
+               />
+
+            <ImageView
+                android:id="@+id/dotImage"
+                android:layout_toRightOf="@+id/headerTxt"
+                android:layout_width="wrap_content"
+                android:visibility="visible"
+                android:contentDescription="@string/ada_navigation_options"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_three_dot" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

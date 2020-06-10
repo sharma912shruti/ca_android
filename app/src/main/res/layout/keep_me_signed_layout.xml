@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_30dp"
+        android:background="@color/whiteColor"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_30dp"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5dp"
+                android:background="@color/headerLineColor" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30dp"
+
+                android:drawableLeft="@drawable/ic_check_circle"
+                android:drawablePadding="@dimen/_5dp"
+                android:text="@string/keep_me_sign_in"
+                android:textColor="@color/keepMeTextColor"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="normal" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="@string/keep_me_sign_detail"
+                android:textColor="@color/keepMeDescriptionColor"
+                android:textSize="@dimen/_14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_marginBottom="@dimen/_30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/cancelTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_rounded_button"
+                    android:gravity="center"
+                    android:padding="@dimen/_10dp"
+                    android:contentDescription="@string/ada_cancel_button"
+                    android:text="@string/cancel"
+                    android:textAllCaps="true"
+                    android:textColor="@color/checkBoxColor"
+                    android:textSize="@dimen/_14sp"
+                    android:textStyle="bold" />
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/comfirmTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/default_button_primary"
+                    android:gravity="center"
+                    android:padding="@dimen/_10dp"
+                    android:contentDescription="@string/ada_confirm_button"
+                    android:text="@string/confirm"
+                    android:textAllCaps="true"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/_14sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

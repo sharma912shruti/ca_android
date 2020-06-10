@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parentLayout"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/toolbarBlock"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar_financial"
+            android:id="@+id/toolbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/netblock"
+        android:layout_below="@+id/toolbarBlock"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/networkLayout"
+            layout="@layout/internet_connection_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/commonWebViewParent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/netblock"
+        android:layout_height="match_parent">
+
+     <!--   <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <edu.capella.mobile.android.widgets.CWebView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/commonDetailWebView">
+
+                </edu.capella.mobile.android.widgets.CWebView>
+
+            </LinearLayout>
+
+       <!-- </ScrollView>-->
+
+
+        <ProgressBar
+            android:id="@+id/commonWebProgressBar"
+            android:theme="@style/ProgressBarTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/popupLayout"
+        android:layout_width="@dimen/_162dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:focusable="true"
+        android:elevation="@dimen/_10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@drawable/background_popup_menu"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10dp"
+            android:background="@drawable/top_border_rounded"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/forwordImg"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:contentDescription="@string/ada_forward_not_available"
+                android:src="@drawable/ic_arrow_forward_black"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/refreshImg"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:contentDescription="@string/ada_refresh_button"
+                android:src="@drawable/ic_refresh_black"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:id="@+id/openBrowserTxt"
+            android:clickable="true"
+            android:paddingTop="@dimen/_12dp"
+            android:paddingBottom="@dimen/_12dp"
+            android:paddingLeft="@dimen/_15dp"
+            android:background="@drawable/background_color_popup_textview"
+            android:text="@string/open_browser"
+            android:focusable="true"
+            android:textColor="@color/popupTextColor"
+            android:textSize="@dimen/_14sp"
+            android:layout_height="wrap_content"/>
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:id="@+id/copyLintTxt"
+            android:clickable="true"
+            android:paddingTop="@dimen/_12dp"
+            android:paddingBottom="@dimen/_12dp"
+            android:paddingLeft="@dimen/_15dp"
+            android:focusable="true"
+            android:text="@string/copy_link"
+            android:textColor="@color/popupTextColor"
+            android:background="@drawable/background_color_popup_textview"
+            android:textSize="@dimen/_14sp"
+            android:layout_height="wrap_content"/>
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/_12dp"
+            android:paddingBottom="@dimen/_12dp"
+            android:contentDescription="@string/ada_share"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/background_color_popup_textview_share"
+            android:id="@+id/shareTxt"
+            android:textColor="@color/popupTextColor"
+            android:paddingLeft="@dimen/_15dp"
+            android:text="@string/Share"
+            android:textSize="@dimen/_14sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

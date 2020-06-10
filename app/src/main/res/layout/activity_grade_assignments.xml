@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    tools:context=".activity.GradeAssignmentsListActivity">
+
+    <include layout="@layout/toolbar_generic"
+        android:id="@+id/gradeAssignmentsToolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/networkLayout"
+            layout="@layout/internet_connection_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--   <ScrollView
+
+           android:layout_width="match_parent"
+           android:visibility="visible"
+           android:scrollbars="none"
+           android:layout_height="match_parent">-->
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/gradeListSwipeToRefresh"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:id="@+id/gradeAssignmentsListLayout"
+            android:layout_height="wrap_content">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/otherGradesLabelTxt"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:paddingLeft="@dimen/_5dp"
+                android:paddingTop="@dimen/_5dp"
+                android:paddingBottom="@dimen/_5dp"
+
+                android:textAllCaps="true"
+                android:textStyle="normal"
+                android:textSize="@dimen/_13sp"
+                android:text="@string/other_grades"
+                android:textColor="@color/keepMeDescriptionColor"
+                android:background="@drawable/gray_filled_square_noborder"
+                />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gradeAssignmentsListView"
+                android:layout_below="@+id/otherGradesLabelTxt"
+
+                android:focusable="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+
+
+
+          <!--  <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/otherSeeAllGradesTxt"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_25dp"
+                android:layout_marginBottom="@dimen/_25dp"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/see_all_grade_and_instr_feedback"
+                android:textColor="@drawable/text_link_selector"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="normal" />-->
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <!--  </ScrollView>-->
+
+</LinearLayout>

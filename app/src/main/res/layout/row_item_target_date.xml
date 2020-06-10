@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whiteColor"
+    android:layout_marginTop="@dimen/_10dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_10dp"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="wrap_content"
+        android:background="@color/background_grey_600"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:layout_height="@dimen/_2dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeParentLayout"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/_10dp"
+        android:paddingBottom="@dimen/_10dp"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assessment"
+            android:textSize="@dimen/_14sp"
+            android:id="@+id/assessment"
+            android:textColor="@color/text_black_900" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/assessment"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:background="@drawable/white_filled_rect_gray_target"
+            android:layout_height="wrap_content">
+
+            <edu.capella.mobile.android.widgets.CPEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:background="@color/transParentColor"
+                android:padding="@dimen/_8dp"
+                android:id="@+id/dateBox"
+                android:drawablePadding="@dimen/_8dp"
+                android:textSize="@dimen/_12sp"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:layout_toLeftOf="@+id/errorImg"
+                android:focusableInTouchMode="false"
+                android:textColorHint="@color/editTextHintColor"
+                android:hint="@string/select_date"
+                android:textColor="@color/text_black_900"
+                android:drawableTint="@color/blue_600"
+                android:drawableStart="@drawable/ic_calendar"/>
+            <ImageView
+                android:id="@+id/errorImg"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_warning_red"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="@dimen/_11sp"
+            android:textColor="@color/bgNoInternetColor"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/relativeLayout"
+            android:text="@string/you_enter_date"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:background="@color/background_grey_600"
+        android:layout_height="@dimen/_2dp"/>
+
+</LinearLayout>
+

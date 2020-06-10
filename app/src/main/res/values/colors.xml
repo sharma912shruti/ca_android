@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>̥
+    <color name="colorPrimary">@color/blackColor</color>
+    <color name="colorPrimaryDark">@color/blackColor</color>
+    <color name="colorAccent">@color/blue_600</color>
+    <!--<color name="clickInvertColor">#a34c46</color>-->
+    <color name="clickInvertColor">#0E2E61</color>
+
+    <color name="loginButtonColor">#3a72ab</color>
+
+    <color name="borderLineColor_opacity">#80d3d3d3</color>
+
+    <color name="dark_blue_color">#0f6da8</color>
+    <!--<color name="loginButtonColor">#5e097d</color>-->
+
+    <color name="defaultButtonColor">#519ef0</color>
+    <!--<color name="defaultButtonColor">#52087D</color>-->
+
+    <color name="defaultDarkButtonColor">#3a72ab</color>
+    <!--<color name="defaultDarkButtonColor">#52087D</color>-->
+
+    <color name="blackColor">#000000</color>
+    <color name="editDraftHeaderColor">#0f6da0</color>
+
+    <color name="orangeColor">#eb833a</color>
+
+
+    <color name="transParentColor">#00000000</color>
+    <color name="transparent_black">#B3000000</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="grayColor">#7f7e83</color>
+    <color name="signeMeTextcolor">#9B9B9B</color>
+    <color name="grayLightColor">#e9eff0</color>
+
+    <color name="greenDrakColor">#014F59</color>
+    <color name="popupTextColor">#303030</color>
+    <color name="popupBackgroundTextColor">#dddddd</color>
+    <color name="greenLightColor">#019273</color>
+    <color name="purpleColor">#72256d</color>
+    <color name="darkRed">#b5121b</color>
+    <color name="voiletColor">#4f7ec4</color>
+    <color name="buttonForeColor">#ffffff</color>
+    <color name="lightGrayColor">#bdbdbd</color>
+
+    <color name="lemonColor">#7ad973</color>
+    <color name="yellowColor">#ffff00</color>
+    <color name="dark_yellow_color">#efb02b</color>
+
+    <color name="defaultColor">#4a90e0</color>
+    <!--<color name="defaultColor">#52087D</color>-->
+
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="textColor">#383838</color>
+    <color name="disabledGray">#999999</color>
+
+
+    <color name= "blueBackButton">#0f6ca8</color>
+
+    <!--#52087D-->
+
+    <color name="titleColor">#4a90e0</color>
+    <!--<color name="titleColor">#52087D</color>-->
+
+    <color name="errorColor">#ff4255</color>
+    <color name="tintNormal">#000000</color>
+    <color name="headerColor">#1a1712</color>
+
+
+
+
+
+    <!--    Login screen color -->
+
+    <color name="headerLineColor">#b5121b</color>
+
+    <color name="editTextHintColor">#666666</color>
+    <color name="timeOutTextColor">#333333</color>
+
+
+    <color name="keepMeTextColor">#251606</color>
+    <color name="keepMeDescriptionColor">#1b1711</color>
+
+
+
+    <color name="timeOutTitleTextColor">#585858</color>
+
+    <color name="bgNoInternetColor">#e50000</color>
+    <color name="checkBoxColor">#0f6da8</color>
+    <color name="divideLineColor">#b3b3b3</color>
+    <color name="forgotPasswordColor">#006dbe</color> :
+    <color name="resetPasswordColor">#006db8</color>
+    <color name="technicalSupportColor">#1a1712</color>
+    <color name="helpLineNoColor">#006dad</color>
+    <color name="borderLineColor">#d3d3d3</color>    
+<!--    Capella Style -->
+
+    <!--    Text Colors-->
+    <color name="text_grey_900" >#1A1712</color>
+    <color name="network_background">#e50000</color>
+    <color name="text_grey_700" >#333333</color>
+    <color name="text_grey_500" >#585858</color>
+    <color name="text_grey_300" >#666666</color>
+    <color name="text_grey_100" >#737373</color>
+
+    <color name="text_black_900" >#1a1712</color>
+    <color name="text_gray_900" >#585858</color>
+    <color name="text_link_blue" >#0f6da8</color>
+
+
+
+
+    <!--    Background Colors-->
+    <color name="background_grey_900" >#1A1712</color>
+    <color name="background_grey_600" >#E7E7E7</color>
+    <color name="background_grey_300" >#F1F1F1</color>
+    <color name="background_grey_100" >#F9F9F9</color>
+    <color name="slider_menu_background" >#333333</color>
+
+
+
+    <!--    Border Colors-->
+
+    <color name="border_grey_600" >#868686</color>
+    <color name="border_grey_300" >#D3D3D3</color>
+    <color name="border_grey_100" >#E7E7E7</color>
+
+    <!--    Primary Colors-->
+    <color name="capella_red" >#B5121B</color>
+    <color name="blue_900" >#05263b</color>
+    <color name="blue_600" >#0F6DA8</color>
+    <color name="blue_300" >#5fb9f1</color>
+    <color name="blue_100" >#CCE9FA</color>
+    <color name="blue_200">#006da8</color>
+
+    <!--    Indicator/Alert colors-->
+    <color name="alert_incorrect_warning" >#E50000</color>
+    <color name="alert_notification" >#EFB02B</color>
+
+    <!--  separator color -->
+    <color name="separator_grey">#CCCCCC</color>
+
+
+</resources>

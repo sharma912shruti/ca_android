@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/_15dp"
+    android:paddingLeft="@dimen/_16dp"
+    android:paddingRight="@dimen/_17dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/gettingStartedRowParent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_19dp"
+        android:orientation="horizontal">
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/gettingStartedTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/text_black_900"
+            android:textSize="@dimen/_14sp"
+
+            android:visibility="visible" />
+
+        <!--  <ImageView
+              android:layout_width="@dimen/_15dp"
+              android:layout_height="@dimen/_15dp"
+              android:layout_gravity="center_vertical"
+              android:tint="@color/blue_600"
+              android:src="@drawable/ic_next"/>-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/blue_600"
+            android:src="@drawable/ic_chevron_right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_marginTop="@dimen/_15dp"
+        android:background="@color/background_grey_600" />
+</LinearLayout>

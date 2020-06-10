@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawer_ripple"
+    android:id="@+id/parentLinearLayout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_8dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu_icon"
+            android:paddingStart="@dimen/_5dp"
+            android:paddingTop="@dimen/_5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_bookmark"/>
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logout"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/menu_icon"
+            android:textStyle="normal"
+            android:id="@+id/menu_name"
+            android:textColor="@color/buttonForeColor"
+            android:textSize="@dimen/_11sp"/>
+
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="normal"
+            android:visibility="visible"
+            android:layout_marginEnd="@dimen/_13dp"
+            android:id="@+id/emailCount"
+            android:textColor="@color/buttonForeColor"
+            android:textSize="@dimen/_12sp"/>
+
+    </RelativeLayout>
+
+    <!--    <View-->
+    <!--        android:id="@+id/view"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:layout_marginTop="@dimen/_5dp"-->
+    <!--        android:background="@color/blackColor" />-->
+
+
+</LinearLayout>

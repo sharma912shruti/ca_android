@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/active_attempt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/active_attempt_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/attempt"
+                android:textColor="@color/text_black_900"
+                android:textSize="@dimen/_14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_chevron_right" />
+        </RelativeLayout>
+
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/attempt_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_25dp"
+            android:text="@string/assessment"
+            android:textColor="@color/text_gray_900"
+            android:textSize="@dimen/_14sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/statusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/status_icon"
+                android:layout_width="@dimen/_15dp"
+                android:layout_height="@dimen/_15dp"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:src="@drawable/ic_file_fill" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/status_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submmitted"
+                android:textColor="@color/text_black_900"
+                android:textSize="@dimen/_11sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/overdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:background="@color/headerLineColor"
+            android:padding="@dimen/_3dp"
+            android:text="@string/overdue"
+            android:textSize="@dimen/_11sp"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor"
+            android:visibility="gone" />
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/notAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:text="@string/submmitted"
+            android:textColor="@color/text_gray_900"
+            android:textSize="@dimen/_11sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/updateTimeInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_25dp"
+            android:contentDescription="@string/ada_new_updated_three_days"
+            android:drawableStart="@drawable/ic_blue_dot"
+            android:drawablePadding="@dimen/_5dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+            android:text="@string/new_or_updated_in_past_3_days"
+            android:textColor="@color/text_gray_900"
+            android:textSize="@dimen/_11sp"
+            android:textStyle="italic"
+            android:visibility="visible" />
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/visit_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_25dp"
+            android:textColor="@drawable/text_link_selector"
+            android:clickable="true"
+            android:drawablePadding="@dimen/_5dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+            android:text="@string/visit_courseroom_to_submit_attempt"
+            android:textSize="@dimen/_11sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/background_grey_600" />
+
+    </LinearLayout>
+</LinearLayout>

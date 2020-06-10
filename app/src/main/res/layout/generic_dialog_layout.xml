@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_10dp"
+    android:paddingRight="@dimen/_10dp"
+    android:paddingLeft="@dimen/_20dp"
+    android:paddingTop="@dimen/_20dp"
+    android:background="@drawable/white_rounded_background"
+    android:orientation="vertical">
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error"
+        android:textColor="@color/blackColor"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="normal" />
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:lineSpacingExtra="@dimen/_2dp"
+        android:text="@string/generic_error_message"
+        android:textColor="@color/text_grey_500"
+        android:textSize="@dimen/_14sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_18dp"
+        android:layout_height="wrap_content">
+
+
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:paddingLeft="@dimen/_30dp"
+            android:paddingRight="@dimen/_30dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+            android:textSize="@dimen/_12sp"
+            android:textStyle="normal"
+            android:background="@drawable/background_dialog_textview"
+            android:contentDescription="@string/ada_ok_button"
+            android:textAllCaps="true"
+            android:id="@+id/okTxtView"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/dark_blue_color"/>
+
+    </RelativeLayout>
+</LinearLayout>

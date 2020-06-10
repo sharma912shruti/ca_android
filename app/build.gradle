@@ -1,0 +1,214 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'org.jetbrains.dokka'
+
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'jacoco'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "edu.capella.mobile.android"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 8
+        versionName "4.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug
+                {
+                    testCoverageEnabled = true
+                }
+    }
+
+
+    project.gradle.taskGraph.whenReady{
+        connectedProductionDebugAndroidTest{
+            ignoreFailures = true
+        }
+    }
+    flavorDimensions 'Flavors'
+    productFlavors {
+        Production {
+            dimension = 'Flavors'
+            versionName = "4.0.0 PROD-1"
+            minSdkVersion 24
+            buildConfigField("String", "VERSION_NAME_WITHOUT_SUFFIX", "\"4.0.0\"")
+            buildConfigField("String", "FLAVOR_NAME", "\"Production build\"")
+            buildConfigField("String", "HOST", "\"https://m2.capella.edu\"")
+            buildConfigField("String", "HUBBLE_HOST", "\"https://hubble-ext.capella.edu\"")
+            buildConfigField("String", "OPENAM_HOST", "\"https://sso3.capella.edu\"")
+            buildConfigField("String", "MULESOFT_HOST", "\"https://apigatewayext.capella.edu\"")
+            buildConfigField("String", "MULESOFT_CLIENT_ID", "\"f67ce6315bd249b79a523a138869c7f6\"")
+
+            buildConfigField("String", "ENV_CAPS", "\"PRD\"")
+            buildConfigField("String", "MULE_ENV", "\"\"")
+            buildConfigField("String", "ENVIRONMENT", "\"\"")
+
+            buildConfigField("String", "STICKY_FORWARD_URL", "\"https://apigatewayext.capella.edu/iris/utility-ext/v1/sticky/forward\"")
+
+            buildConfigField("String", "WEB_URL", "\"https://campus.capella.edu\"")
+            buildConfigField("String", "VERSION_ID", "\"4.0.0\"")
+            buildConfigField("String", "VERSION_PREFIX", "\"PROD-\"")
+
+            buildConfigField("String", "AUTH_USER", "\"mobileclientwsuser\"")
+            buildConfigField("String", "AUTH_PASSWORD", "\"2mPVhM7y\"")
+            buildConfigField("String", "EMAIL_URL", "\"http://www.email.capellauniversity.edu\"")
+            buildConfigField("String", "OMNITURE_APP_ID", "\"42b83751f02d/de0648f83174/launch-08f77aa826c5\"")
+            buildConfigField("String","COMPETENCY_MAP_URL","\"https://campus.capella.edu/web/competency\"")
+
+            buildConfigField("int", "READ_TIMEOUT", "30000")
+            buildConfigField("int", "CONNECTION_TIMEOUT", "30000")
+            buildConfigField("String", "FP_2_0_API_HEADER", "\"https://stsa.capella.edu\"")
+
+            buildConfigField("String", "HASHES", "\"bW9iaWxlY2xpZW50d3N1c2VyOjJtUFZoTTd5\"")
+        }
+        QA {
+            dimension = 'Flavors'
+            versionName = "4.0.0 QA-1"
+            minSdkVersion 24
+            buildConfigField("String", "VERSION_NAME_WITHOUT_SUFFIX", "\"4.0.0\"")
+            buildConfigField("String", "FLAVOR_NAME", "\"QA build\"")
+            buildConfigField("String", "HOST", "\"https://qamobile2.capella.edu\"")
+            buildConfigField("String", "HUBBLE_HOST", "\"https://qahubble-ext.capella.edu\"")
+            buildConfigField("String", "OPENAM_HOST", "\"https://qasso3.capella.edu\"")
+            buildConfigField("String", "MULESOFT_HOST", "\"https://qaapigatewayext.capella.edu\"")
+            buildConfigField("String", "MULESOFT_CLIENT_ID", "\"f67ce6315bd249b79a523a138869c7f6\"")
+
+            buildConfigField("String", "ENVIRONMENT", "\"qa\"")
+            buildConfigField("String", "ENV_CAPS", "\"QA\"")
+            buildConfigField("String", "MULE_ENV", "\"qa\"")
+
+            buildConfigField("String", "STICKY_FORWARD_URL", "\"https://qaapigatewayext.capella.edu/iris/utility-ext/v1/sticky/forward\"")
+
+            buildConfigField("String", "WEB_URL", "\"https://qacampus.capella.edu\"")
+            buildConfigField("String", "VERSION_ID", "\"4.0.0\"")
+            buildConfigField("String", "VERSION_PREFIX", "\"QA-\"")
+
+            buildConfigField("String", "AUTH_USER", "\"mobileclientwsuser\"")
+            buildConfigField("String", "AUTH_PASSWORD", "\"MFXY0dr3\"")
+
+            //   THIS IS STAGE KEY, DONOT FOUND FOR QA
+
+            buildConfigField("String", "EMAIL_URL", "\"http://www.dev.capellauniversity.edu\"")
+            buildConfigField("String", "OMNITURE_APP_ID", "\"42b83751f02d/de0648f83174/launch-1a4bd904c968-staging\"")
+            buildConfigField("String","COMPETENCY_MAP_URL","\"https://campus.capella.edu/web/competency\"")
+
+            buildConfigField("int", "READ_TIMEOUT", "50000")
+            buildConfigField("int", "CONNECTION_TIMEOUT", "50000")
+            buildConfigField("String", "FP_2_0_API_HEADER", "\"https://stsa.capella.edu\"")
+
+            buildConfigField("String", "HASHES", "\"bW9iaWxlY2xpZW50d3N1c2VyOk1GWFkwZHIz\"")
+        }
+        Stage {
+            dimension = 'Flavors'
+            versionName = "4.0.0 STAG-1"
+            minSdkVersion 24
+            buildConfigField("String", "VERSION_NAME_WITHOUT_SUFFIX", "\"4.0.0\"")
+            buildConfigField("String", "FLAVOR_NAME", "\"Staging build\"")
+            buildConfigField("String", "HOST", "\"https://stgmobile2.capella.edu\"")
+            buildConfigField("String", "HUBBLE_HOST", "\"https://stghubble-ext.capella.edu\"")
+            buildConfigField("String", "OPENAM_HOST", "\"https://stgsso3.capella.edu\"")
+            buildConfigField("String", "MULESOFT_HOST", "\"https://stgapigatewayext.capella.edu\"")
+            buildConfigField("String", "MULESOFT_CLIENT_ID", "\"f67ce6315bd249b79a523a138869c7f6\"")
+
+            buildConfigField("String", "ENVIRONMENT", "\"stg\"")
+            buildConfigField("String", "ENV_CAPS", "\"STG\"")
+            buildConfigField("String", "MULE_ENV", "\"stg\"")
+
+            buildConfigField("String", "STICKY_FORWARD_URL", "\"https://stgapigatewayext.capella.edu/iris/utility-ext/v1/sticky/forward\"")
+
+            buildConfigField("String", "WEB_URL", "\"https://stgcampus.capella.edu\"")
+            buildConfigField("String", "VERSION_ID", "\"4.0.0\"")
+            buildConfigField("String", "VERSION_PREFIX", "\"STG-\"")
+
+            buildConfigField("String", "AUTH_USER", "\"mobileclientwsuser\"")
+            buildConfigField("String", "AUTH_PASSWORD", "\"SkfWUYY2\"")
+            buildConfigField("String", "EMAIL_URL", "\"http://www.dev.capellauniversity.edu\"")
+            buildConfigField("String", "OMNITURE_APP_ID", "\"42b83751f02d/de0648f83174/launch-1a4bd904c968-staging\"")
+            buildConfigField("String","COMPETENCY_MAP_URL","\"https://campus.capella.edu/web/competency\"")
+
+            buildConfigField("int", "READ_TIMEOUT", "50000")
+            buildConfigField("int", "CONNECTION_TIMEOUT", "50000")
+            buildConfigField("String", "FP_2_0_API_HEADER", "\"https://stsa.capella.edu\"")
+
+            buildConfigField("String", "HASHES", "\"bW9iaWxlY2xpZW50d3N1c2VyOlNrZldVWVky\"")
+        }
+    }
+
+    dokka {
+        outputFormat = 'html'
+        outputDirectory = "$buildDir/CapellaDocumentation"
+    }
+
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+
+    //OMNITURE RELATED
+    implementation 'com.adobe.marketing.mobile:mobileservices:1.+'
+    implementation 'com.adobe.marketing.mobile:analytics:1.+'
+    implementation 'com.adobe.marketing.mobile:userprofile:1.+'
+    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
+
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc01"
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
+    testImplementation 'junit:junit:4.12'
+
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+//    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-intents:3.0.2'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.1.1'
+
+    androidTestImplementation 'androidx.test:core:1.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation "com.android.support:support-annotations:27.1.1"
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-intents:3.0.2'
+
+    testImplementation 'com.squareup.assertj:assertj-android:1.2.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // Airship - FCM
+    implementation "com.urbanairship.android:urbanairship-fcm:12.2.0"
+
+    // Airship - ADM
+    implementation "com.urbanairship.android:urbanairship-adm:12.2.0"
+
+
+
+}

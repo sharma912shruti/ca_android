@@ -1,0 +1,421 @@
+<resources>
+    <string name="app_name">Capella Mobile</string>
+    <string name="method_required">Method type required : GET, POST, PUT</string>
+
+    <!--   .................... Login Screen...........-->
+
+
+    <string name="capella_university">Capella University</string>
+    <string name="email">Email/Username</string>
+    <string name="password">Password</string>
+    <string name="show">Show</string>
+    <string name="show_password">SHOW</string>
+    <string name="hide">Hide</string>
+
+
+    <string name="no_access_mobile">No Access To Mobile App</string>
+    <string name="prefference">PREFERENCES</string>
+    <string name="push_notification">Push Notifications</string>
+    <string name="push_notification_message">Push notifications can help you stay on top of course messages, replies, and feedback.</string>
+
+    <string name="prospective_student_info">Prospective Student Info</string>
+    <string name="settings">Settings</string>
+    <string name="complete_an_application">You must complete an application for admission to Capella to get access to the mobile app.</string>
+
+    <string name="apply_for_admision">Apply for Admission</string>
+    <string name="trial_course">Trial Course</string>
+
+
+    <string name="Your_draft_edits">Your draft edits weren’t saved.</string>
+
+    <string name="please_try_again">Please try again.</string>
+    <string name="target_dates_saved">Target dates saved.</string>
+    <string name="see_error">See errors below and try again.</string>
+    <string name="saving_target_dates">Saving Target Dates</string>
+    <string name="logout_out_due_inactivity">Logged out due to inactivity.</string>
+    <string name="please_sign_in_agian">It looks like you haven’t used the app for a while, so we have logged you out for your security. Please sign in again.</string>
+
+    <string name="please_review_employment_information"> Please review and confirm that the contact and employment information we have for you are correct. Keeping this information up-to-date…</string>
+
+    <string name="resource_might_not_open">Resources might not open on your phone.</string>
+
+
+    <string name="not_internet_connection"> No internet connection.</string>
+    <string name="alert">Alerts</string>
+    <string name="connection_is_required">A connection is required to log in.</string>
+    <string name="learn_aboout_cappela_university">Learn about Capella University</string>
+    <string name="forgot_username">Forgot Username</string>
+    <string name="forgot_username_ada">Forgot\nUsername</string>
+    <string name="technical_support">Technical Support:</string>
+    <string name="capella_mobile">Capella Mobile, version</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_ada">Reset\nPassword</string>
+    <string name="toll_number">1-888-227-3552</string>
+
+    <string name="network_error">Network Errors</string>
+    <string name="message_on_target_dates_screen">"Set your target date for completing the assessment in this course.\n\n<b>Important:</b> You must complete and submit a course plan in order to release any financial aid funds you have been awarded.\n\nContact your coach if you need assistance or have any questions."</string>
+    <string name="login">Log In</string>
+
+    <string name="Your_post_submitted">Your post wasn’t submitted.</string>
+    <string name="copied_url">Link has been copied.</string>
+    <string name="attached_txt">Edit or delete this file attachment in the courseroom.</string>
+    <string name="log_in_error">Log In Error</string>
+    <string name="not_saved">Not Saved</string>
+    <string name="you_must_have_suject">You must have a subject to save a draft.</string>
+    <string name="you_must_have_content">You must have content in the subject and body.</string>
+    <string name="sign_in_error">The email/username or password you entered does not match our records. Note that passwords are case-sensitive, be sure your caps lock is turned off.</string>
+    <string name="please_enter_user_name_password">Please enter your username and password.</string>
+    <string name="please_enter_user_name">Please enter your username.</string>
+    <string name="please_enter_password">Please enter your password.</string>
+    <string name="ok">OK</string>
+    <string name="keep_editing">Keep Editing?</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="assessmenet">Assessment</string>
+    <string name="continue_editing">CONTINUE EDITING</string>
+    <string name="america_chicago">America/Chicago</string>
+    <string name="discard_changes">DISCARD CHANGES</string>
+    <string name="your_last_recorded_activity">Your last recorded activity in this course was on</string>
+    <string name="please_submit_an_assessment">Please submit an assessment today or</string>
+    <string name="update_your_progress">update your progress.</string>
+    <string name="academic_engagement">Academic Engagement Needed</string>
+    <string name="academic_engagement_verfication">Engagement Verification Pending</string>
+    <string name="save_as_draft">SAVE AS DRAFT</string>
+    <string name="last_saved_on">Last saved on</string>
+    <string name="central">Central</string>
+    <string name="we_have_received">We have received your course progress update. There may be a short processing delay before it appears in the course.</string>
+    <string name="editDraft">Edit Draft</string>
+    <string name="complete_assessment">Please complete an assessment or activity.</string>
+    <string name="discussions">Discussion</string>
+    <string name="confirm">Confirm</string>
+    <string name="get_update">GET UPDATE</string>
+    <string name="keep_me_sign_in">Keep Me Signed In</string>
+    <string name="update_your_app">Please update your app</string>
+    <string name="update_your_app_header">Please Update Your App</string>
+    <string name="you_must_updrade_your_app">We’ve made important security improvements to the Capella Mobile app. You must upgrade your app before you can log in.</string>
+    <string name="keep_me_sign_detail">While you are logged in, the app is directly connected to your Capella accounts, including your <b>financial, academic </b>and<b> personal information.</b> We do not recommend using the “keep me signed in” option if your mobile device is shared, or if this device is being used without security measures that prevent unauthorized access.\n \nChoose confirm to stay signed in, or cancel to be automatically logged out of the app after 60 minutes of inactivity.</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_logout">Log Out</string>
+    <string name="menu_view_campus_on_full_site">View Campus on Full Site</string>
+    <string name="menu_campus_news">Campus News</string>
+    <string name="announcement">Announcements</string>
+    <string name="menu_contact_us">Contact Us</string>
+    <string name="menu_library">Library</string>
+    <string name="menu_academic_plan">Academic Plan</string>
+    <string name="menu_finances">Finances</string>
+    <string name="open_browser">Open in browser</string>
+    <string name="copy_link">Copy link</string>
+    <string name="assessment_submitted">No assessments have been submitted.</string>
+    <string name="Share">Share…</string>
+    <string name="menu_courses">Courses</string>
+    <string name="information_not_available">Information not Available</string>
+    <string name="tap_to_open_menu">Tap to open menu</string>
+    <string name="or">OR</string>
+    <string name="swipe_right_to_open_menu_from_everywhere">Swipe right to\nopen menu from anywhere</string>
+    <string name="ok_got_it">Ok, Got It</string>
+    <string name="id">ID:</string>
+    <string name="united_states_toll_free">United States toll-free:</string>
+    <string name="capella_1_888">1-888-CAPELLA</string>
+    <string name="toll_free_1_888_227_3552">1-888-227-3552</string>
+    <string name="international">International:</string>
+    <string name="international_no_1_612_977_5000">1-612-977-5000</string>
+    <string name="technical_support_message">Technical support is available by phone 24/7. Academic and Financial Aid phone support is available:\nMonday - Friday: 7 a.m. - 8 p.m.\nSaturday: 9 a.m. - 5:30 p.m.</string>
+    <string name="all_time_are_central"><i>All times are Central.</i></string>
+    <string name="web">Web</string>
+    <string name="technical_support_without_colon">Technical Support</string>
+    <string name="browse_technical_page_message">Browse the Technical Support page on Campus.</string>
+    <string name="capella_mobile_version">This is Capella Mobile, version</string>
+    <string name="academic_support">Academic Support</string>
+    <string name="visit_academic_message">Visit the Academic Advising page for questions on course planning, grades, or academic coaching.</string>
+    <string name="academic_advising">Academic Advising</string>
+    <string name="capella_campus">Capella Campus</string>
+    <string name="visit_capella_campus">For all other online resources, visit Capella Campus.</string>
+    <string name="mail">Mail</string>
+    <string name="capella_university_address">Capella Tower\n225 South 6th Street, 9th Floor\nMinneapolis, MN 55402</string>
+    <string name="library">Library</string>
+    <string name="search_tools">Search Tools</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="phone">PHONE</string>
+    <string name="toll_free">Toll free:</string>
+    <string name="summon">Summon</string>
+    <string name="database">Database A-Z</string>
+    <string name="use_summon_to_find_articles">Use Summon to find articles, books, and other resources across the library collection.</string>
+    <string name="select_from_complete">Select from a complete list of subject-specific databases.</string>
+    <string name="error">Error</string>
+    <string name="profile">Profile</string>
+    <string name="classmates">Classmates</string>
+
+    <string name="effective_date">Effective Date: </string>
+
+    <string name="no_classmates">Classmates not available for select course.</string>
+
+    <!--     NO ACCESS TO MOBILE LAYOUT-->
+<!--    <string name="trial_course">Trial Course</string>-->
+    <string name="apply_for_admission">Apply For Admission</string>
+<!--    <string name="prospective_student_info">Prospective Student Info</string>-->
+    <string name="no_access_to_mobile_app">No Access To Mobile App</string>
+    <string name="no_access_to_mobile_app_detail">You must complete an application for admission to Capella to get access to the mobile app</string>
+    <!--     SYLLABUS-->
+    <string name="no_syllabus">Syllabus not available for the selected course</string>
+
+    <!--       ASSIGNMENTS-->
+    <string name="no_assignments">Assignments not available for the selected course</string>
+
+    <!--    COURSES-->
+    <string name="current">Current</string>
+    <string name="previous">Previous</string>
+    <string name="no_active_course_title">We cannot display any active courses</string>
+    <string name="no_active_course_Detail">We cannot display any active courses for you at this time. If you are registered for a course, it will typically be available here by 5 p.m. Central on the Friday before the course start date.
+        \n\nOnce you have an active course, this page will show your course information and provide links to discussions, assignments, and other areas for that course.
+        \n\nIf you have taken courses within the past 6 months, they should be available in the Previous tab.</string>
+    <string name="instructor">Instructor</string>
+
+    <string name="no_previous_course_title">We cannot display any previous courses</string>
+    <string name="no_previous_course_detail">Previously completed courses are available here for approximately 6 months after the end date for the course.</string>
+
+    <string name="id_card">ID Card</string>
+    <string name="edit_email_campus">Edit your email address on Campus.</string>
+    <string name="view_edit_email_campus">View and edit your full profile on Campus.</string>
+    <string name="no_id_card">You do not currently have a Capella ID card. ID cards are available to currently enrolled learners and alumni.</string>
+
+    <string name="id_capella_university">Capella University</string>
+    <string name="university_address">225 South 6th Street\n1-888-CAPELLA\nMinneapolis, MN 55402\nwww.capella.edu\n</string>
+
+
+
+    <string name="new_thread">New Thread</string>
+    <string name="update_version_message">We apologize for the interruption. Capella has made an important security update to the mobile app. You will be logged out and must update your app before you can log in again.</string>
+    <string name="full_site">Full Site</string>
+    <string name="unsaved_changes">Unsaved Changes</string>
+    <string name="keep_edit">Keep Editing</string>
+    <string name="leave_app_message">You are leaving the app; this link will open in a new browser window.</string>
+    <string name="leave_app_for_attachment_message">You are leaving the app; this link will open your post in a new browser window where you can view your attachment.</string>
+
+    <string name="Your_text_formatting">Your text formatting will be lost if you save or submit it from the app.</string>
+    <string name="discard_your_changes">You can discard your changes, or keep editing and save your changes by using the save button.</string>
+    <string name="continue_text">Continue</string>
+    <string name="news">News</string>
+    <string name="draft_discussion">Lorem ipsum dolor sit amet, consectetur veluma adipiscing elit. Phasellus in sapien vel augue malesuada tempor. Quisque eget suscipit massa. Nam ut ligula</string>
+    <string name="more">...more</string>
+
+    <string name="drafts">DRAFT</string>
+    <string name="no_saved_drafts">You have no saved drafts.</string>
+    <string name="finances_dashboard">Finances Dashboard</string>
+    <string name="toll_number_library">1-888-375-8221</string>
+    <string name="international_no_library">1-612-977-4033</string>
+    <string name="hours">Hours</string>
+    <string name="library_staff_available">Library staff are available:</string>
+    <string name="library_staff_availability">Monday - Wednesday: 8:00 a.m. - 8:00 p.m.\nThursday - Friday: 8:00 a.m. - 5:00 p.m.\nSaturday: 9:00 a.m. - 5:00 p.m.\nSunday: 12:00 p.m. - 8:00 p.m.</string>
+    <string name="no_text">-</string>
+
+    <string name="logout_msg">Do you want to log out?</string>
+    <string name="data_not_available">Data not available</string>
+    <string name="there_are_no_recent">There are no recent news items</string>
+    <string name="no_announcements">No announcements at this time.</string>
+    <string name="capella_email">Capella Email</string>
+    <string name="learner">LEARNER</string>
+    <string name="id_num">"ID# "</string>
+    <string name="capella_contact">1-888-227-3552</string>
+    <string name="pullToRefreshColor">#0f6da8</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="messages">Messages</string>
+    <string name="you_have_unread_messages_count">You have  %1$s unread messages</string>
+    <string name="you_have_unread_message_count">You have  %1$s unread message</string>
+    <string name="announcements">Announcements</string>
+    <string name="grade_and_status">Grades and Status</string>
+    <string name="assignments">Assignments</string>
+    <string name="discussion">Discussions</string>
+    <string name="discussion_drafts">Discussion Drafts</string>
+    <string name="studies">Studies</string>
+
+    <string name="view_course_on_fill_site">View %1$s on Full Site</string>
+    <string name="unread_reply_to_you">Unread reply to you</string>
+    <string name="unread_replies_to_you">Unread replies to you</string>
+    <string name="back">Back</string>
+
+
+    <string name="learner_activities">Learner Activities</string>
+    <string name="course_overview">Course Overview</string>
+    <string name="grades">Grades</string>
+    <string name="pre_requisites">Prerequisites</string>
+    <string name="final_course_grade">Final Course Grade</string>
+    <string name="course_materials">Course Materials</string>
+    <string name="apa_style_central">APA Style Central</string>
+    <string name="competency_map">Competency Map</string>
+    <string name="assessment_and_status">Assessments and Status</string>
+    <string name="course_menu">Course Menu</string>
+    <string name="policy_analysis_and_research">Policy Analysis and Research</string>
+    <string name="set_target_dates">Set Target Dates</string>
+
+
+    <string name="complete_this_course">Complete this Course</string>
+    <string name="no">no</string>
+
+    <string name="thread_blank_error_for_subject_body">You must have content in the subject &amp; body</string>
+    <string name="thread_blank_error_for_subject">You must have a subject to save</string>
+
+    <string name="draft_blank_error_for_subject_body">You must have content in the subject &amp; body to save a draft</string>
+    <string name="draft_blank_error_for_subject">You must have a subject to save a draft</string>
+
+
+
+
+    <string name="draft_saved_successfully">Your draft was saved in the \"Discussion Drafts\" menu.</string>
+    <string name="draft_saved_failure">Your draft wasn’t saved.</string>
+
+
+    <string name="thread_submitted_successfully">Thread submitted.</string>
+    <string name="thread_submit_failure">Your thread wasn’t submitted.</string>
+    <string name="thread_submit_internet_failure">No internet connection.  Please check your settings.</string>
+
+    <string name="reply_saved_successfully">Reply submitted.</string>
+    <string name="reply_saved_failure">Your reply wasn’t submitted.</string>
+
+    <string name="reply_draft_saved_successfully">Your draft was saved in the \"Discussion Drafts\" menu.</string>
+    <string name="reply_draft_saved_failure">Your draft wasn’t saved.</string>
+
+
+    <string name="url_opening_error">There was a problem opening this link. Please try again.</string>
+    <string name="academic_plan_dashboard">My Academic Plan Home</string>
+    <string name="generic_error_message">Unable to load, Please try again later</string>
+    <string name="messages_small">messages</string>
+    <string name="aboutMe">About me</string>
+    <string name="study">Study</string>
+    <string name="please_check_setting">Please check your settings.</string>
+    <string name="no_discussion_forum">No discussion thread available at the moment.</string>
+    <string name="no_thread_yet">There are no threads in this discussion yet.</string>
+    <string name="create_new_thread">Create a new thread.</string>
+    <string name="threads">Threads</string>
+    <string name="primary_instructor">Primary Instructor</string>
+    <string name="secondary_instructor">Secondary Instructor</string>
+    <string name="writing_coach">Writing Coach</string>
+    <string name="view_description">View Description</string>
+    <string name="view_formatted_post">View Formatted Post</string>
+    <string name="formatted_view">Formatted View</string>
+    <string name="replies">Replies</string>
+    <string name="posts">Posts</string>
+    <string name="reply_to">"Reply To "</string>
+    <string name="response_to">"Response to "</string>
+
+    <string name="submit">Submit</string>
+    <string name="submiting">Submitting post</string>
+    <string name="subject">Subject</string>
+    <string name="write_your_post">Write your post...</string>
+
+    <string name="submitting_thread">Submitting thread</string>
+    <string name="saving_draft">Saving draft</string>
+    <string name="getting_version">Getting Version</string>
+    <string name="reply">Reply</string>
+    <string name="submitting_reply">Submitting reply</string>
+    <string name="no_description_available">No description available.</string>
+    <string name="your_targets_dates_were_not_saved">Your target dates weren\'t saved.</string>
+    <string name="your_update_text">Before you log in, you must update your app for important security improvements.</string>
+    <string name="get_update_msg">Get update.</string>
+
+    <string name="assessment">Assessment</string>
+    <string name="lead_characteristics_value_and_context">Lead Characteristics, Values, And Context</string>
+    <string name="select_date">Select Date</string>
+    <string name="you_enter_date">You must enter a date.</string>
+    <string name="assignment_statuses">Assignment Statuses</string>
+    <string name="no_assignment_statuses">You have no Assignment Statuses at this time.</string>
+
+    <string name="current_course_grade">Current Course Grade</string>
+    <string name="no_current_course_msg">A current course grade is not available.</string>
+
+    <string name="grade_items_and_statuses">Graded Items And Statuses</string>
+    <string name="assignment_grade_statuses">Assignment Grades and Status</string>
+    <string name="grade_for_assignment_msg">Grades for assignments will display here when available.</string>
+
+    <string name="other_grades">Other Grades</string>
+    <string name="grade_for_other_assignment_msg">Grades for items other than assignments will display here when available.</string>
+
+    <string name="current_grade_info">Your current grade reflects all course items graded so far, including new grades listed below.</string>
+    <string name="grade_last_update_info">This grade last updated on</string>
+    <string name="save_your_dates">Save your dates</string>
+    <string name="plz_select_all_dates_to_save">Please select all dates to save</string>
+
+    <string name="notification_new_or_updated_past_three_days">New or updated in past 3 days</string>
+    <string name="due_soon">Due soon</string>
+
+    <string name="trouble_showing_profile">Unable to load, Please try again later.</string>
+
+    <string name="trouble_showing_idcard">Unable to load, Please try again later.</string>
+    <string name="no_assessment_message">No assessments have been submitted.</string>
+    <string name="view_and_grade_assessments_in_courseroom">View and grade assessments in the courseroom.</string>
+    <string name="assessment_message">The assessments below are ready for evaluation, grouped by amount of time since they were submitted.</string>
+    <string name="assessment_status">Assessment Status</string>
+
+    <string name="see_all_grade_and_instr_feedback">See all grades and instructor feedback in the courseroom.</string>
+    <string name="key">Key</string>
+    <string name="not_submitted">Not Submitted</string>
+    <string name="submitted">Submitted</string>
+    <string name="evaluated">Evaluated</string>
+    <string name="overdue">overdue</string>
+    <string name="new_or_updated_in_past_3_days">New or updated in past 3 days</string>
+    <string name="assessments">Assessments</string>
+    <string name="target_date_colon">Target Date:</string>
+    <string name="target_date_not_set">Target Date Not Set</string>
+    <string name="attempt">Attempt</string>
+    <string name="assessment_detail">Assessment Details</string>
+    <string name="attempts">Attempts</string>
+    <string name="submmitted">Submitted</string>
+    <string name="scoring_guide">Scoring Guide</string>
+    <string name="view_scoring_guide_detail">View the scoring guide for detailed feedback and overall comments.</string>
+    <string name="view_faculty_feedback">View Faculty Feedback</string>
+    <string name="additional_feedback_text">Check for additional feedback and attachments in the courseroom.</string>
+    <string name="no_detail_found">No Data Found</string>
+    <string name="details">Details</string>
+    <string name="mobile_view_notice">Important activities or resources may be missing in the mobile view below. Please visit this page within the courseroom to review them.</string>
+    <string name="submission_history">Submission History</string>
+
+
+    <string name="view_scoring_guide_feedback">View the scoring guide for detailed feedback and overall comments.</string>
+
+    <string name="check_additional_feedback">Check for additional feedback and attachments in the courseroom.</string>
+
+    <string name="scoring_guide_for_submitted_info">The scoring guide for this assignment will display here when it has been graded.</string>
+    <string name="other_feedback">Other Feedback</string>
+
+    <string name="instructor_feedback_availability">Instructor comments will appear here when they are available.</string>
+    <string name="view_all_feedback">View all feedback in the courseroom.</string>
+    <string name="not_yet_available">Not Yet Available</string>
+
+    <string name="due_today">Due today</string>
+    <string name="is_due_today">is due today</string>
+    <string name="late">Late</string>
+
+
+    <string name="no_feedback_for_this_assignment">The scoring guide does not have grade feedback for this assignment.</string>
+    <string name="visit_courseroom_to_submit_attempt">Visit the courseroom to submit this attempt.</string>
+    <string name="course_tool">Course Tools</string>
+    <string name="tools_and_resource">Tools and Resources</string>
+    <string name="home">Home</string>
+    <string name="week">Week</string>
+
+    <string name="session_expired">Session expired</string>
+    <string name="please_login_again">Please log in again.</string>
+    <string name="link_will_open">, Link will open in a web browser.</string>
+    <string name="ada_announcement_click_message">Announcements, New or updated in past 3 days</string>
+    <string name="toll_free_number">Toll free number</string>
+    <string name="international_number">international number</string>
+    <string name="visit_courseroom">Visit courseroom</string>
+    <string name="evaluated_on">evaluated on</string>
+    <string name="submitted_on">submitted on</string>
+    <string name="reference_and_interlibrary_message">Reference and Interlibrary Loan services will not be available on the following university holidays:</string>
+    <string name="holiday_list">"New Year's Day \nMartin Luther King Jr. Day \nMemorial Day \nIndependence Day \nLabor Day \nThanksgiving Day \nDay after Thanksgiving \nChristmas Eve \nChristmas Day "</string>
+
+</resources>

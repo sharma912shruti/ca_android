@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:background="@color/whiteColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="end">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/menuToolbarLayout"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/toolbarDrawer"
+                    layout="@layout/toolbar_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5dp"
+                    android:background="@color/darkRed" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/mainContainer"
+                android:layout_width="match_parent"
+                android:background="@color/whiteColor"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/menuToolbarLayout">
+                <include
+                    android:id="@+id/coachView"
+                    layout="@layout/coach_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+
+    <!-- navigation drawer layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include
+            android:id="@+id/navigationHeaderView"
+            layout="@layout/drawer_header_layout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/drawerRecylerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/navigationHeaderView"
+            android:layout_gravity="start"
+            android:background="@color/slider_menu_background"
+            android:choiceMode="singleChoice"
+            android:nestedScrollingEnabled="true" />
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

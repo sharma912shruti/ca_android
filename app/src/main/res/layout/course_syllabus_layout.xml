@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_course_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_71dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_36dp"
+            android:gravity="center_horizontal"
+            android:letterSpacing="-0.01"
+            android:text="@string/learner_activities"
+            android:textColor="@color/headerLineColor"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <include layout="@layout/row_item_course_room_menu"
+        android:id="@+id/courseOverview"/>
+
+    <include layout="@layout/row_item_course_room_menu"
+        android:id="@+id/preRequisites"/>
+
+    <include layout="@layout/row_item_course_room_menu"
+        android:id="@+id/grading"/>
+
+    <include layout="@layout/row_item_course_room_menu"
+        android:id="@+id/finalCourseGrade"/>
+
+    <include layout="@layout/row_item_course_room_menu"
+        android:id="@+id/courseMaterials"/>
+
+    <include layout="@layout/row_item_course_room_menu"
+        android:id="@+id/apaStyleCentral"/>
+
+</LinearLayout>

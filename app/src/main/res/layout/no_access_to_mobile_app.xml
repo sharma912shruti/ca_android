@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/toolbarNoAccess"
+            layout="@layout/toolbar_no_access" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <include
+            android:id="@+id/networkLayout"
+            layout="@layout/internet_connection_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone" />
+        </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_30dp"
+                    android:layout_marginRight="@dimen/_30dp"
+                    android:background="@color/whiteColor"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_5dp"
+                        android:background="@color/headerLineColor" />
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/noAccessHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15dp"
+                        android:drawablePadding="@dimen/_5dp"
+                        android:gravity="center"
+                        android:text="@string/no_access_to_mobile_app"
+                        android:textColor="@color/keepMeTextColor"
+                        android:textSize="@dimen/_16sp"
+                        android:textStyle="bold" />
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/noAccessMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25dp"
+                        android:text="@string/no_access_to_mobile_app_detail"
+                        android:textColor="@color/keepMeDescriptionColor"
+                        android:textSize="@dimen/_14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_33dp"
+                        android:orientation="vertical"
+                         >
+
+                        <edu.capella.mobile.android.widgets.CPTextView
+                            android:id="@+id/prospectiveStudentInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10dp"
+                            android:layout_marginRight="@dimen/_10dp"
+                            android:background="@drawable/blue_rounded_button"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:text="@string/prospective_student_info"
+                            android:textAllCaps="true"
+                            android:textColor="@color/checkBoxColor"
+                            android:textSize="@dimen/_14sp"
+                            android:textStyle="bold" />
+
+
+                        <edu.capella.mobile.android.widgets.CPTextView
+                            android:id="@+id/applyForAdmission"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10dp"
+                            android:layout_marginRight="@dimen/_10dp"
+                            android:layout_marginTop="@dimen/_15dp"
+                            android:background="@drawable/blue_rounded_button"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:text="@string/apply_for_admission"
+                            android:textAllCaps="true"
+                            android:textColor="@color/checkBoxColor"
+                            android:textSize="@dimen/_14sp"
+                            android:textStyle="bold" />
+
+
+                        <edu.capella.mobile.android.widgets.CPTextView
+                            android:id="@+id/trialCourse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10dp"
+                            android:layout_marginRight="@dimen/_10dp"
+                            android:layout_marginTop="@dimen/_15dp"
+                            android:background="@drawable/blue_rounded_button"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:text="@string/trial_course"
+                            android:textAllCaps="true"
+                            android:textColor="@color/checkBoxColor"
+                            android:textSize="@dimen/_14sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FOrmatted View</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0">
+		<style>
+			/** Specify a font named "MyFont",
+			and specify the URL where it can be found: */
+			@font-face {
+					font-family: "Roboto-regular";
+					src: url('file:///android_asset/fonts/roboto_regular.ttf');
+			}
+			h3 { font-family:"MyFont"}
+	</style>
+    
+<script language="javascript">
+
+	function setFormattedText(formattedString) 
+	{
+		//	document.getElementById("formattedText").innerHTML = formattedString
+		document.getElementById("formattedText").innerHTML = CapellaTalker.getFormatedData()
+		
+	}
+	function openAttachment()
+	{
+	        CapellaTalker.openAttachment()
+	}
+
+
+	function setAttachmentDetail(fileNameString , fileLink, fileSize) 
+	{
+			document.getElementById("fileName").innerHTML= fileNameString
+			document.getElementById("fileName").setAttribute('href', fileLink)
+			document.getElementById("fileSize").innerHTML = fileSize
+		
+	}
+
+
+	function hideElement(idOfElement)
+	{
+	   document.getElementById(idOfElement).style.display = "none"
+	}
+	
+
+	
+</script>
+    
+  </head>
+  <body style="background-color:white" >
+
+<!-- 
+	  <button onclick="setAttachmentDetail('jai.txt' , 'http://jai.com' , '300 KB')">Click me</button>   -->
+
+<div id="formattedText" style="color:#1a1712">
+-
+</div>
+
+
+<!--
+<div id="formattedAttachment" style="word-wrap: break-word; border:1px solid #d3d3d3; background-color: #f9f9f9; padding: 10px 20px 10px 5px; margin-top: 20px">
+
+ 
+		<img style="margin-left: 5px; margin-right: 10px ;  vertical-align: baseline;"  width="15px" height="15px" src="file:///android_asset/paperclip.png"/>
+
+	  <a id="fileName" style="color:#0f6da8;text-decoration: none; " href="https://campus.capella.edu/" onclick="openAttachment()">fileName.txt</a> 
+	 
+
+  <span id="fileSize" style="color:#585858; float: right; ">0 KB</span>
+
+</div>
+-->
+		
+<div id="formattedAttachment"  style="overflow-x: auto;  word-wrap: break-word; border:1px solid #d3d3d3; background-color: #f9f9f9; padding: 10px 10px 10px 5px; margin-top: 20px">
+
+	<table  >
+		<tr>
+				<td style="width:10%">
+					<img style="margin-left: 5px; margin-right: 10px ;  vertical-align: baseline;"  width="15px" height="15px" src="file:///android_asset/paperclip.png"/>
+				</td>
+				<td style="text-align: left;">
+					<a id="fileName" style="color:#0f6da8;text-decoration: none; " href="https://campus.capella.edu/" onclick="openAttachment()">fileName.txt</a> 
+				</td>
+				<td style="width:20%; text-align: right;">
+					<span id="fileSize" style="color:#585858; float: right; ">0 KB</span>
+				</td>
+		</tr>
+
+	</table>
+  
+</div>
+
+
+  </body>
+</html>
+

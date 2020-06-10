@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parentLayout"
+    android:background="@color/background_grey_600"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_announcement" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/networkLayout"
+            layout="@layout/internet_connection_layout"
+            android:layout_width="match_parent"
+            android:animateLayoutChanges="true"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:background="@color/background_grey_600"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/background_grey_600"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            <include-->
+<!--                android:id="@+id/no_internet"-->
+<!--                layout="@layout/internet_connection_layout"-->
+<!--                android:visibility="gone" />-->
+
+            <LinearLayout
+                android:id="@+id/datesAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/red_warning_background"
+                android:elevation="@dimen/_2dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp"
+                android:visibility="gone"
+                tools:targetApi="lollipop">
+
+                <ImageView
+                    android:layout_width="@dimen/_35dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5dp"
+                    android:src="@drawable/ic_warning"
+                    android:tint="@color/bgNoInternetColor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5dp">
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/your_targets_dates_were_not_saved"
+                        android:textColor="@color/timeOutTextColor"
+                        android:textSize="@dimen/_11sp"
+                        android:textStyle="bold" />
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/descrptionTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/please_try_again"
+                        android:textColor="@color/timeOutTitleTextColor"
+                        android:textSize="@dimen/_11sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/whiteColor">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_15dp">
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/message_on_target_dates_screen"
+                        android:textColor="@color/text_black_900"
+                        android:textSize="@dimen/_14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:background="@color/background_grey_600"
+
+                android:layout_height="@dimen/_2dp"/>
+
+            <LinearLayout
+                android:id="@+id/assessmentListLayout"
+                android:layout_width="match_parent"
+                android:background="@color/background_grey_600"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_10dp"
+                android:text="@string/save_your_dates"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/saveDates"
+                android:textAllCaps="true"
+                android:contentDescription="@string/ada_save_your_date"
+                android:textSize="@dimen/_14sp"
+                android:textColor="@color/whiteColor"
+                android:background="@drawable/blue_filled_rounded_button_for_coach"
+                android:layout_height="@dimen/_45dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

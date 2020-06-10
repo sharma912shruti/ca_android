@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/AppTheme"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/blog_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/headerColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/backButtonLl"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:padding="@dimen/_5dp"
+                    android:src="@drawable/ic_chevron_left" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/headerTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="text"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/_14dp"
+                 />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/dotImage"
+                android:layout_toRightOf="@+id/headerTxt"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_three_dot" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/headerLineView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5dp"
+            android:background="@color/headerLineColor" />
+
+    </LinearLayout>
+</LinearLayout>

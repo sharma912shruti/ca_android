@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/mainLayoutForForum"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/discussionForumGroupHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/gray_filled_square_noborder"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/border_grey_300"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_29dp"
+            android:paddingRight="@dimen/_13dp"
+            android:background="@color/border_grey_100"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+
+           >
+
+            <edu.capella.mobile.android.widgets.CPTextView
+
+                android:id="@+id/discussionGroupTitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:gravity="center_vertical"
+                android:textAllCaps="true"
+                android:text="Group - 1"
+                android:textStyle="normal"
+                android:textColor="@color/text_grey_900"
+                android:textSize="@dimen/_13sp"
+                  />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/border_grey_300"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/discussionForumListItem"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/_31dp"
+        android:paddingRight="@dimen/_14dp"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/rtChevi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:tint="@color/blue_600"
+            android:src="@drawable/ic_chevron_right"/>
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:lines="3"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_14sp"
+            android:layout_height="wrap_content">
+
+        </edu.capella.mobile.android.widgets.CPTextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/rtChevi"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/discussionTitleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="[ud01] Unit 1 Discussion 1 "
+                    android:textStyle="bold"
+                    android:textColor="@color/text_grey_900"
+                    android:textSize="@dimen/_14sp" />
+
+                <LinearLayout
+                    android:id="@+id/unreadReplyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:src="@drawable/ic_blue_dot"
+                        android:visibility="visible" />
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/unreadReplyForumTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/unread_reply_to_you"
+                        android:textColor="@color/text_grey_500"
+                        android:textSize="@dimen/_11sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separatorLine"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_14dp"
+        android:layout_marginTop="@dimen/_2dp"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/background_grey_600" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yellodig_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_25dp"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="@dimen/_31dp"
+        android:paddingRight="@dimen/_14dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discussion_yellowdig_message"
+            android:textColor="@color/text_black_900"
+            android:textSize="@dimen/_14sp" />
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/go_to_course_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:clickable="true"
+            android:text="@string/go_to_course_room_menu_to_view_weeks"
+            android:textColor="@drawable/text_link_selector"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

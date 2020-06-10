@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/background_grey_600"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_height="wrap_content">
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleTxt"
+        android:text="3 or more days ago"
+        android:textAllCaps="true"
+       android:layout_marginLeft="@dimen/_5dp"
+        android:paddingBottom="@dimen/_4dp"
+        android:paddingTop="@dimen/_4dp"
+        android:paddingRight="@dimen/_4dp"
+        android:textColor="@color/keepMeDescriptionColor"
+        android:textSize="@dimen/_13sp"
+        android:textStyle="normal"/>
+    </LinearLayout>
+</LinearLayout>

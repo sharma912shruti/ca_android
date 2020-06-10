@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_10dp"
+    android:paddingRight="@dimen/_5dp"
+    android:paddingLeft="@dimen/_20dp"
+    android:paddingTop="@dimen/_20dp"
+    android:background="@drawable/white_rounded_background"
+    android:orientation="vertical">
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:text="@string/menu_logout"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="normal|bold" />
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/_2dp"
+        android:text="@string/logout_msg"
+        android:textColor="@color/text_grey_500"
+        android:textSize="@dimen/_14sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_18dp"
+        android:layout_height="wrap_content">
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:contentDescription="@string/ada_confirm_button"
+            android:background="@drawable/background_dialog_textview"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_10dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_12sp"
+            android:textStyle="normal"
+            android:id="@+id/confirmBtnTxt"
+            android:textColor="@color/dark_blue_color"/>
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_10dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+            android:contentDescription="@string/ada_cancel_button"
+            android:background="@drawable/background_dialog_textview"
+            android:textAllCaps="true"
+            android:layout_marginRight="@dimen/_5dp"
+            android:textSize="@dimen/_12sp"
+            android:layout_toLeftOf="@+id/confirmBtnTxt"
+            android:textStyle="normal"
+            android:id="@+id/cancelBtnTxt"
+
+            android:textColor="@color/dark_blue_color"/>
+
+    </RelativeLayout>
+</LinearLayout>

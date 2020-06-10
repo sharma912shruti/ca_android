@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_5dp"
+    android:background="@color/whiteColor"
+    android:id="@+id/parentView"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:id="@+id/assessment_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/assessment"
+            android:textAllCaps="true"
+            android:textColor="@color/text_black_900"
+            android:textSize="@dimen/_11sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_chevron_right" />
+    </RelativeLayout>
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/assessment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25dp"
+        android:text="@string/assessment"
+        android:textColor="@color/text_black_900"
+        android:textSize="@dimen/_14sp"
+        android:textStyle="normal" />
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/assessment_target_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25dp"
+        android:paddingTop="@dimen/_5dp"
+        android:paddingBottom="@dimen/_3dp"
+        android:text="@string/assessment"
+        android:textColor="@color/text_gray_900"
+        android:textSize="@dimen/_11sp"
+        />
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:layout_width="wrap_content"
+        android:background="@color/headerLineColor"
+        android:textColor="@color/whiteColor"
+        android:padding="@dimen/_3dp"
+        android:visibility="gone"
+        android:textSize="@dimen/_11sp"
+        android:id="@+id/overdue"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/overdue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/_5dp"
+        android:id="@+id/status_information_Layout"
+        android:paddingBottom="@dimen/_5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_15dp"
+            android:id="@+id/status_icon"
+            android:layout_height="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:src="@drawable/ic_file_fill"
+            />
+        <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_information"
+            android:textStyle="normal"
+            android:textSize="@dimen/_11sp"
+            android:text="@string/assessment_and_status"
+            android:textColor="@color/text_black_900" />
+    </LinearLayout>
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/updateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25dp"
+        android:paddingTop="@dimen/_5dp"
+        android:contentDescription="@string/ada_new_updated_three_days"
+        android:paddingBottom="@dimen/_5dp"
+        android:visibility="gone"
+        android:drawablePadding="@dimen/_5dp"
+        android:drawableStart="@drawable/ic_blue_dot"
+        android:text="@string/new_or_updated_in_past_3_days"
+        android:textColor="@color/text_gray_900"
+        android:textSize="@dimen/_11sp"
+        android:textStyle="italic" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_marginTop="@dimen/_5dp"
+        android:background="@color/background_grey_600"/>
+
+</LinearLayout>

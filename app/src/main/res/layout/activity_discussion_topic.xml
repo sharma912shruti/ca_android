@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/disTopicParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    tools:context=".activity.DiscussionTopicActivity">
+
+    <include
+        android:id="@+id/discussionTopicToolbar"
+        layout="@layout/toolbar_generic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/networkLayout"
+        layout="@layout/internet_connection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:contentDescription="@string/ada_view_description"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ada_view_description"
+            android:background="@color/background_grey_100"
+            android:orientation="vertical">
+
+            <edu.capella.mobile.android.widgets.CPTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3dp"
+            android:id="@+id/topicNameTxt"
+            android:text="@string/no_text"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/headerColor"
+            android:textSize="@dimen/_14sp" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="match_parent"
+                android:id="@+id/viewDescriptionTxt"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3dp"
+                android:contentDescription="@string/ada_view_description"
+                android:text="@string/view_description"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal"
+                android:textColor="@drawable/text_link_selector"
+                android:textSize="@dimen/_11sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:background="@color/borderLineColor"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noDiscussionTopicLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:contentDescription="@string/ada_create_new_thread"
+            android:paddingTop="@dimen/_10dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:text="@string/no_thread_yet"
+                android:textColor="@color/headerColor"
+                android:textSize="@dimen/_14sp" />
+
+            <edu.capella.mobile.android.widgets.CPTextView
+                android:id="@+id/createNewThreadTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textStyle="normal"
+                android:contentDescription="@string/ada_create_new_thread"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/create_new_thread"
+                android:textColor="@drawable/text_link_selector"
+                android:textSize="@dimen/_14sp" />
+
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/discussionTopicListSwipeToRefresh"
+            android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/discussionTopicListView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:scrollbars="vertical" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

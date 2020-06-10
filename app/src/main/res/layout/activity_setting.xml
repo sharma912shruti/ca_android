@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/whiteColor"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/whiteColor"
+            android:padding="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_3dp"
+            android:layout_marginRight="@dimen/_3dp"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/whiteColor"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_grey_600"
+                    android:paddingStart="@dimen/_8dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:text="@string/prefference"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_black_900"
+                    android:textSize="@dimen/_13sp"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp">
+
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/keepMeSigneTxt"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:gravity="left|center"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_15dp"
+                        android:layout_toLeftOf="@+id/toggleKeepMe"
+                        android:text="@string/keep_me_sign_in"
+                        android:textColor="@color/text_black_900"
+                        android:textSize="@dimen/_14sp"
+                        />
+
+                    <Switch
+                        android:id="@+id/toggleKeepMe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/_5dp"
+                        android:layout_alignParentRight="true"
+
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_15dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:background="@color/background_grey_600" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pushNotificationTxt"
+                        android:layout_marginLeft="@dimen/_15dp"
+                        android:gravity="left|center"
+                        android:text="@string/push_notification"
+                        android:layout_marginRight="@dimen/_5dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/text_black_900"
+                        android:textSize="@dimen/_14sp" />
+
+                    <Switch
+                        android:id="@+id/togglePushNotification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="@dimen/_5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_15dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        />
+
+
+                </RelativeLayout>
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_15dp"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_70dp"
+                    android:text="@string/push_notification_message"
+                    android:textColor="@color/timeOutTitleTextColor"
+                    android:textSize="@dimen/_11sp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:background="@color/background_grey_600" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/versionTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/capella_mobile"
+                        android:textColor="@color/timeOutTitleTextColor"
+                        android:textSize="@dimen/_11sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

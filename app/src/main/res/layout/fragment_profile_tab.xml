@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    android:paddingLeft="@dimen/_15dp"
+    android:paddingRight="@dimen/_15dp"
+    tools:context=".activity.tabs.ProfileTab">
+
+    <edu.capella.mobile.android.widgets.CPTextView
+        android:id="@+id/profileTroubleTxt"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="@dimen/_15dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sp"
+        android:text="@string/trouble_showing_profile"
+
+        />
+
+
+    <ScrollView
+        android:id="@+id/profileTabScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:orientation="vertical"
+        android:isScrollContainer="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_10dp">
+
+                <ImageView
+                    android:id="@+id/profileLogoImg"
+                    android:layout_width="@dimen/_95dp"
+                    android:layout_height="@dimen/_97dp"
+                    android:contentDescription="@string/ada_profile_picture"
+                    android:background="@drawable/white_filled_square_gray"
+                    android:padding="@dimen/_2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12dp"
+                    android:orientation="vertical">
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/profileNameTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_text"
+                        android:textColor="@color/text_black_900"
+                        android:textSize="@dimen/_16sp" />
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/profileIdTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:layout_marginBottom="@dimen/_8dp"
+                        android:text="@string/no_text"
+                        android:textColor="@color/text_black_900"
+                        android:textSize="@dimen/_16sp" />
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:id="@+id/profileAddressTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_text"
+                        android:textColor="@color/text_gray_900"
+                        android:textSize="@dimen/_14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1dp"
+                android:layout_marginTop="@dimen/_18dp"
+                android:layout_marginBottom="@dimen/_18dp"
+                android:background="@color/background_grey_600" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/profileEmailTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_mail"
+                    android:drawablePadding="@dimen/_10dp"
+
+                    android:text="@string/no_text"
+                    android:textColor="@color/text_gray_900"
+                    android:textSize="@dimen/_14sp" />
+
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/editProfileEmailTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_11dp"
+                    android:layout_marginBottom="@dimen/_11dp"
+                    android:drawableLeft="@drawable/ic_edit"
+                    android:contentDescription="@string/ada_edit_your_email_link"
+                    android:drawableTint="@drawable/text_link_selector"
+                    android:drawablePadding="@dimen/_10dp"
+                    android:textStyle="normal"
+                    android:text="@string/edit_email_campus"
+                    android:textColor="@drawable/text_link_selector"
+                    android:textSize="@dimen/_14sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_13dp"
+                    android:layout_marginBottom="@dimen/_13dp"
+                    android:background="@color/background_grey_600" />
+
+                <LinearLayout
+                    android:id="@+id/profileTabAboutLayout"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_13dp"
+                    android:orientation="vertical">
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_9dp"
+                        android:drawablePadding="@dimen/_10dp"
+                        android:text="@string/aboutMe"
+                        android:textColor="@color/text_grey_900"
+                        android:textSize="@dimen/_16sp" />
+
+                    <edu.capella.mobile.android.widgets.CPTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_9dp"
+                        android:id="@+id/profileAboutText"
+                        android:drawablePadding="@dimen/_10dp"
+                        android:text="@string/no_text"
+                        android:textColor="@color/text_grey_900"
+                        android:textSize="@dimen/_14sp" />
+
+                </LinearLayout>
+
+                <edu.capella.mobile.android.widgets.CPTextView
+                    android:id="@+id/viewEditProfileTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9dp"
+                    android:layout_marginBottom="@dimen/_18dp"
+                    android:contentDescription="@string/ada_your_full_profile_on_campus"
+                    android:drawableLeft="@drawable/ic_edit"
+                    android:drawablePadding="@dimen/_10dp"
+                    android:textStyle="normal"
+                    android:text="@string/view_edit_email_campus"
+                    android:drawableTint="@drawable/text_link_selector"
+                    android:textColor="@drawable/text_link_selector"
+                    android:textSize="@dimen/_14sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/networkLayout"
+        layout="@layout/internet_connection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/coursesHostTab"
+        android:layout_width="match_parent"
+        app:tabMaxWidth="0dp"
+        android:layout_height="@dimen/_40dp"
+        android:background="@color/grayColor"
+        app:tabBackground="@color/whiteColor"
+        app:tabIndicatorHeight="@dimen/_2dp"
+        app:tabGravity="fill"
+        app:tabSelectedTextColor="@color/blue_600"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/tabAppearance">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ada_current_courses_activity"
+            android:text="@string/current" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ada_previous_courses_activity"
+            android:text="@string/previous" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <edu.capella.mobile.android.widgets.CViewPager
+        android:id="@+id/coursePagerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
